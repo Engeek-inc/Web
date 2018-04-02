@@ -1,0 +1,139 @@
+*{
+    font-family: FontAwesome,YuGothic, '游ゴシック', sans-serif;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+-webkit-touch-callout: none;
+}
+a{
+  text-decoration: none;
+}
+body {
+margin: 0px;
+font-size: 1em;
+}
+
+header{
+  border-bottom: solid 3px;
+  border-color: #cfd8dc;
+  color: white;
+  transition: all 0.7s;
+  z-index: 99999;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+header span{
+  font-size: 1em;
+  text-align: left;
+  border-right: solid 1px;
+  padding: 1vw;
+  border-color: black;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  color: black;
+  -webkit-transform: translateY(-30%) translateX(-30%);
+  transform: translateY(-30%) translateX(-30%);
+  width: 10.3vw;
+  font-weight: 500;
+}
+header img{
+    height: 5vh;
+}
+header span a{
+  color: black;
+}
+li.gallery-cell{
+  list-style: none;
+}
+
+ul.js-flickity{
+  padding-left: -10em;
+}
+footer{
+  background-color: #0B3341;
+  width: 100%;
+  color: white;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+
+}
+footer span#LogoTitle{
+  margin-left: 2vw;
+  font-size: 50%;
+}
+
+footer span#LogoTitle2{
+  display: inherit;
+  margin-left: 1.5vw;
+  font-size: 110%;
+}
+
+footer a#Twitter{
+  font-size: 100%;
+  color: white;
+}
+footer a#Twitter::before{
+  margin-left: 3vw;
+  content: "\f081"
+}
+footer a#Facebook{
+  font-size: 100%;
+  color: white;
+}
+footer a#Facebook::before{
+  margin-left: 1vw;
+  content: "\f082";
+}
+footer a#Youtube{
+  font-size: 100%;
+  color: white;
+}
+footer a#Youtube::before{
+  margin-left: 1vw;
+  content: "\f16a";
+}
+/*ここからサポートページ*/
+article#Title{
+  padding-top: 4em;
+  border-bottom: solid 1px;
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+article#Title span{
+  font-size: 2em;
+  font-weight: 600;
+}
+
+article#HelpContent{
+  font-size: 100%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+article#HelpContent p.Content{
+  font-size: 90%;
+  margin-top: 0.3%;
+  margin-bottom: 0.3%;
+  margin-left: 3vw;
+}
+article#HelpContent span.help::before{
+  font-size: 120%;
+  content: "\f059";
+  color: black;
+}
+article#HelpContent span.contact::before{
+  font-size: 120%;
+  content: "\f007";
+  color: black;
+}
+/*ここからAboutUs*/
+article#AboutUs{
+  margin-left: 1em
+}
+
+article#Products{
+  margin-left: 1em
+}

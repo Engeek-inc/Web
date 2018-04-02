@@ -1,0 +1,23 @@
+<script>
+
+//今日の日付データを変数hidukeに格納
+var hiduke=new Date();
+
+//年・月・日・曜日を取得する
+var year = hiduke.getFullYear();
+var month = hiduke.getMonth()+1;
+var week = hiduke.getDay();
+var day = hiduke.getDate();
+
+var yobi= new Array("日","月","火","水","木","金","土");
+//時刻データを取得して変数jikanに格納する
+var jikan= new Date();
+
+//時・分・秒を取得する
+var hour = jikan.getHours();
+var minute = jikan.getMinutes();
+var second = jikan.getSeconds();
+
+document.write("Year:"+year+"Month:"+month+"Day:"+day+"Hour:" + hour+"Minute:",+minute+"Second"+second);
+
+</script>
