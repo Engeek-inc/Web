@@ -1,0 +1,613 @@
+@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+html {
+    overflow: auto;
+}
+
+body {
+    overflow: hidden;
+    min-width: 400px;
+}
+
+.Mincho {
+    font-family: 'Sawarabi Mincho';
+}
+
+.BackGround {
+    background-color: #2A2421;
+    top: 0px;
+}
+
+.PaperBackGround {
+    background-color: #DDD1C2;
+    background-image: url(../image/PaperTex.jpg);
+    width: 88.888%;
+    height: auto;
+    background-blend-mode: multiply;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 5px 5px 10px #000;
+    -webkit-box-shadow: 5px 5px 10px #000;
+    -moz-box-shadow: 5px 5px 10px #000;
+}
+
+.LogoHeader {
+    position: absolute;
+    top: 0px;
+    width: auto;
+    height: 8.33%;
+    z-index: 100;
+    box-shadow: 5px 5px 10px #555;
+    -webkit-box-shadow: 5px 5px 10px #555;
+    -moz-box-shadow: 5px 5px 10px #555;
+    background-color: white;
+    left: 0;
+}
+
+img.LogoHeaderImg {
+    width: auto;
+    height: 90%;
+    transform: translateY(5%);
+    left: 0;
+}
+
+.CatchCopy {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 15%;
+    left: 1%;
+}
+
+img.CatchCopyImg {
+    width: 100%;
+    height: auto;
+}
+
+.TitlePhoto {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top: 15%;
+    right: 20%;
+
+    transform: rotateZ(5deg);
+    box-shadow: 5px 5px 10px #555;
+    -webkit-box-shadow: 5px 5px 10px #555;
+    -moz-box-shadow: 5px 5px 10px #555;
+
+}
+
+img.TitlePhotoImg {
+    width: 100%;
+    height: auto;
+    transform: translateY(1.5%);
+}
+
+.PleaseScroll {
+    position: absolute;
+    width: 8%;
+    height: auto;
+    top: 75%;
+    left: 40%;
+}
+
+img.PleaseScrollImg {
+    width: 100%;
+    height: auto;
+}
+
+/* ウィンドウ幅が0〜 750pxの場合に適用するCSS */
+
+@media screen and ( max-width:750px) {
+
+    .CatchCopy {
+        position: absolute;
+        width: 68%;
+        height: auto;
+        top: 10%;
+        left: 5%;
+    }
+
+    img.CatchCopyImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .TitlePhoto {
+        position: absolute;
+        width: 70%;
+        height: auto;
+        top: 40%;
+        left: 10%;
+
+        transform: rotateZ(5deg);
+        box-shadow: 5px 5px 10px #555;
+        -webkit-box-shadow: 5px 5px 10px #555;
+        -moz-box-shadow: 5px 5px 10px #555;
+
+    }
+
+    img.TitlePhotoImg {
+        width: 100%;
+        height: auto;
+        transform: translateY(1.5%);
+    }
+
+    .PleaseScroll {
+        position: absolute;
+        width: 20%;
+        height: auto;
+        top: 76%;
+        left: 35%
+    }
+
+    img.PleaseScrollImg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.FriendsSub {
+    position: absolute;
+    transform-origin: left;
+    text-align: left;
+    color: #876543;
+    height: 4.166%;
+    left: 6%;
+    width: 44.444%;
+    font-size: 1em;
+    top: 12%;
+    margin: 0 auto;
+}
+
+.FriendsHeader {
+    position: absolute;
+    transform-origin: left;
+    text-align: left;
+    color: #876543;
+    height: 4.166%;
+    left: 5%;
+    width: 44.444%;
+    font-size: 3.5em;
+    top: 5%;
+    margin: 0 auto;
+}
+
+
+.Line_Top {
+    position: absolute;
+    transform-origin: center;
+    text-align: center;
+    height: 4.166%;
+    width: 50vw;
+    top: 10%;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+img.SepatratorImg {
+    width: 40%;
+}
+
+/* ウィンドウ幅が0〜 750pxの場合に適用するCSS */
+
+@media screen and ( max-width:750px) {
+
+    img.SepatratorImg {
+        width: 100%;
+    }
+
+}
+
+/* キャラクター配置（デスクトップ用） */
+
+img.CharaImg {
+    position: absolute;
+    width: auto;
+    height: 33.33%;
+}
+
+img.CharaPos01 {
+    top: 20.83%;
+    left: 33%;
+}
+
+img.CharaPos02 {
+    top: 20.83%;
+    right: 18.52%;
+}
+
+img.CharaPos03 {
+    top: 59%;
+    right: 46%;
+}
+
+img.CharaPos04 {
+    top: 59%;
+    left: 3.7%;
+}
+
+img.CharaPos05 {
+    top: 97.91%;
+    right: 18.52%;
+}
+
+img.CharaPos06 {
+    top: 97.91%;
+    left: 33%;
+}
+
+.CharaExplain {
+    position: absolute;
+    width: 24%;
+}
+
+.CharaExplainPos01 {
+    top: 16.66%;
+}
+
+.CharaExplainPos02 {
+    top: 16.66%;
+    left: 45%;
+}
+
+.CharaExplainPos03 {
+    top: 54.17%;
+    left: 15%;
+}
+
+.CharaExplainPos04 {
+    top: 54.17%;
+    right: 18.52%;
+}
+
+.CharaExplainPos05 {
+    top: 91.68%;
+    left: 45%;
+}
+
+.CharaExplainPos06 {
+    top: 91.68%;
+    left: 3.704%;
+}
+
+img.CharaImg {
+    position: absolute;
+    width: auto;
+    height: 33.33%;
+}
+
+img.CharaPos01 {
+    top: 20.83%;
+    left: 56%;
+}
+
+img.CharaPos02 {
+    top: 58.33%;
+    left: 3.7%;
+}
+
+img.CharaPos03 {
+    top: 97.91%;
+    right: 18.52%;
+}
+
+img.CharaPos04 {
+    top: 135.41%;
+    left: 3.7%;
+}
+
+img.CharaPos05 {
+    top: 174.99%;
+    right: 18.52%;
+}
+
+img.CharaPos06 {
+    top: 212.49%;
+    left: 3.7%;
+}
+
+.CharaExplain {
+    position: absolute;
+    width: 44.44%;
+}
+
+.CharaExplainPos01 {
+    top: 16.66%;
+    left: 3.704%;
+}
+
+.CharaExplainPos02 {
+    top: 54.17%;
+    right: 18.52%;
+}
+
+.CharaExplainPos03 {
+    top: 93.74%;
+    left: 3.704%;
+}
+
+.CharaExplainPos04 {
+    top: 131.25%;
+    right: 18.52%;
+}
+
+.CharaExplainPos05 {
+    top: 170.82%;
+    left: 3.704%;
+}
+
+.CharaExplainPos06 {
+    top: 208.33%;
+    right: 18.52%;
+}
+
+
+.CharacterBorder {
+    position: relative;
+    padding: 0.25em 2em;
+    margin: 20px, 20px;
+    color: #716151;
+}
+
+.CharacterBorder:before,
+.CharacterBorder:after {
+    content: '';
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+}
+
+.CharacterBorder:before {
+    border-left: solid 1px #5767bf;
+    border-top: solid 1px #5767bf;
+    top: 0;
+    left: 20px;
+}
+
+.CharacterBorder:after {
+    border-right: solid 1px #5767bf;
+    border-bottom: solid 1px #5767bf;
+    bottom: 0;
+    right: 20px;
+}
+
+.CharacterBorder p {
+    margin: 0;
+    padding: 0;
+}
+
+.CharacterTitle {
+    margin: 5em 0;
+    font-size: 1.5em;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-bottom: 1px solid;
+}
+
+div.Circle {}
+
+img.Circle {
+
+    border-radius: 2000px;
+    -moz-border-image: border-radius 200px;
+    -webkit-border-image: border-radius 200px;
+    display: inline-block;
+    position: absolute;
+    transition: all 300ms 0s ease;
+}
+
+img.Circle:hover {
+    -webkit-filter: brightness(0.4);
+    -moz-filter: brightness(0.4);
+    -o-filter: brightness(0.4);
+    -ms-filter: brightness(0.4);
+    filter: brightness(0.4);
+    color: white;
+}
+
+@media screen and (min-width: 600px) {
+    img.Circle {
+        height: 90%;
+        width: auto;
+    }
+    p.CircleText{
+    margin-left: 15em;
+    margin-top: 1em;
+    margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    img.Circle {
+        width: 37%;
+        height: auto;
+    }
+    p.CircleText{
+    margin-top: 10em;
+    }
+}
+
+
+p.CircleText:first-letter {
+    font-size: 2em;
+}
+
+.Line_Chara_L {
+    border-top: 1px solid #2A2421;
+    ;
+    height: 4.166%;
+    top: 0px;
+    transform: translateY(-80%);
+}
+
+.CharaText {
+    width: 100%;
+    font-size: .7em;
+    height: 27.08%;
+    transform: translateY(-17.5%);
+    color: #2A2421;
+}
+
+img.PleaseScrollImg {
+    width: 100%;
+    height: auto;
+}
+
+
+.SideButtonSelected {
+    position: fixed;
+    background-color: #4F002F;
+    right: 8px;
+    color: #FFFFFF;
+    background-image: url(../image/PaperTex.jpg);
+    background-blend-mode: multiply;
+    width: 13.70%;
+    height: 14.583%;
+    border-radius: 3.7037%;
+    font-family: Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-align: center;
+}
+
+.SideButtonSelected a {
+    position: fixed;
+    display: block;
+    right: 8px;
+    color: #000000;
+    width: 10.7%;
+    height: 14.583%;
+    border-top-right-radius: 3.7037%;
+    border-bottom-right-radius: 3.7037%;
+
+}
+
+
+.SideButtonDeSelected {
+    position: fixed;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7f8096+0,b5b3d3+18 */
+    background: #7f8096;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #7f8096 0%, #b5b3d3 18%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #7f8096 0%, #b5b3d3 18%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #7f8096 0%, #b5b3d3 18%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f8096', endColorstr='#b5b3d3', GradientType=1);
+    /* IE6-9 */
+    display: block;
+    right: 8px;
+    color: #000000;
+    width: 10.7%;
+    height: 14.583%;
+    border-top-right-radius: 3.7037%;
+    border-bottom-right-radius: 3.7037%;
+    font-family: Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-align: center;
+
+}
+
+.SideButtonDeSelected a {
+    position: fixed;
+    display: block;
+    right: 8px;
+    color: #000000;
+    width: 10.7%;
+    height: 14.583%;
+    border-top-right-radius: 3.7037%;
+    border-bottom-right-radius: 3.7037%;
+
+}
+
+
+.SideButtonPositionTop0 {
+    top: 6.25%;
+}
+
+.SideButtonPositionTop1 {
+    top: 22.91%;
+}
+
+.SideButtonPositionTop2 {
+    top: 39.58%;
+}
+
+.SideButtonPositionTop3 {
+    top: 56.25%;
+}
+
+
+.Footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 15%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3b3b3+0,e6e6e6+5,e6e6e6+95,b3b3b3+100 */
+    background: #b3b3b3;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #b3b3b3 0%, #e6e6e6 5%, #e6e6e6 95%, #b3b3b3 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #b3b3b3 0%, #e6e6e6 5%, #e6e6e6 95%, #b3b3b3 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #b3b3b3 0%, #e6e6e6 5%, #e6e6e6 95%, #b3b3b3 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3b3b3', endColorstr='#b3b3b3', GradientType=1);
+    /* IE6-9 */
+    box-shadow: 0px -5px 40px #0006;
+    -webkit-box-shadow: 0px -5px 40px #0006;
+    -moz-box-shadow: 0px -5px 40px #0006;
+
+}
+
+img.GenesisRecordLogoImg {
+    position: relative;
+    height: 20%;
+    width: auto;
+    transform: translateY(60%) translateX(5%);
+}
+
+.FooterText2 {
+    text-align: right;
+    transform: translateY(-120%) translateX(-5%);
+}
+
+.BannersParent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-20%);
+}
+
+img.AppStoreBanner {
+    height: 34%;
+    transform: translateY(-20%) translateX(60%);
+
+}
+
+img.GooglePlayBanner {
+    height: 50%;
+    transform: translateY(3%) translateX(60%);
+}
+
+.Bar1 {
+    top: 100%;
+    height: 2%;
+    background-color: #FFFFFF;
+}
+
+.Bar2 {
+    bottom 0%;
+    height: 2%;
+    background-color: #00395E;
+    transform: translateY(450%);
+}
