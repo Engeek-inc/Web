@@ -10,7 +10,6 @@ html {
 
 body {
     overflow: hidden;
-    min-width: 400px;
 }
 
 .Mincho {
@@ -29,7 +28,7 @@ body {
     position: absolute;
     background-color: #DDD1C2;
     background-image: url(../image/PaperTex.jpg);
-    width: 88.888%;
+    width: 88%;
     height: auto;
     background-blend-mode: multiply;
     border-top-right-radius: 16px;
@@ -88,6 +87,7 @@ img.CatchCopyImg {
     position: absolute;
     width: 100vw;
     height: auto;
+    top: 1.5em;
     transform: rotateZ(5deg);
     box-shadow: 5px 5px 10px #555;
     -webkit-box-shadow: 5px 5px 10px #555;
@@ -428,7 +428,7 @@ div.Header p {
     position: relative;
     display: inline-block;
     margin: 1em;
-    margin-left: 2em;
+    margin-left: 1vw;
     padding-left: 0.5em;
     padding-right: 0.5em;
     border-left: 1px solid white;
