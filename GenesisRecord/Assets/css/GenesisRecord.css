@@ -188,6 +188,7 @@ img.PleaseScrollImg {
 
 .CharacterTitle {
     margin: 5em 0;
+    margin-bottom: 1em;
     font-size: 1.5em;
     position: relative;
     padding: 0.5em 1.5em;
@@ -203,6 +204,7 @@ img.Circle {
     -webkit-border-image: border-radius 200px;
     display: inline-block;
     position: absolute;
+    margin-top: 1em;
     transition: all 300ms 0s ease;
 }
 
