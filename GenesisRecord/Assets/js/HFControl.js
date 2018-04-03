@@ -15,4 +15,13 @@ window.onscroll = function () {
         $(".Footer").fadeIn('fast');
         $(".ScrollUp").fadeOut('fast');
     }
+
+    if (window.innerWidth > 600) {
+        console.log(window.innerWidth);
+        $("#nav-drawer").hide();
+        $("header p").show();
+    } else {
+        $("#nav-drawer").show();
+        $("header p").hide();
+    }
 }
