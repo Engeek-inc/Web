@@ -1,8 +1,6 @@
 @import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
 html {
     overflow: auto;
-    margin: 0, 0, 0, 0;
-    padding: 0, 0, 0, 0;
 }
 
 body {
@@ -388,7 +386,8 @@ img.PleaseScrollImg {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    height: 15%;
+    height: 10%;
+    left: 0px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3b3b3+0,e6e6e6+5,e6e6e6+95,b3b3b3+100 */
     background: #b3b3b3;
     /* Old browsers */
@@ -426,15 +425,21 @@ img.GenesisRecordLogoImg {
 }
 
 img.AppStoreBanner {
-    height: 34%;
-    transform: translateY(-20%) translateX(60%);
-
+    position: absolute;
+    width: 8em;
+    top: 20%;
+    left: 1em;
 }
 
 img.GooglePlayBanner {
-    height: 50%;
-    transform: translateY(3%) translateX(60%);
+    position: absolute;
+    height: auto;
+    top: 7%;
+    left: 9em;
+    width: 11em;
 }
+
+
 
 .Bar1 {
     top: 100%;
