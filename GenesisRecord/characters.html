@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8" />
     <title>Genesis Record Character</title>
     <script src="Assets/js/jquery-3.3.1.min.js"></script>
+    <script src="Assets/js/smooth-scroll.js"></script>
+    <script src="Assets/js/HFControl.js"></script>
     <!--cssの読み込み-->
     <link rel="stylesheet" href="Assets/css/GenesisRecord.css" type="text/css" />
 </head>
@@ -12,31 +14,13 @@
 <body>
     <!--大きな背景-->
     <!--Begin Header-->
-    <div class="Header">
+    <div class="Header" data-scroll-header>
         <p><a href="index.html">Home</a></p>
         <p><a href="characters.html">Characters</a></p>
         <p><a href="index.html">Story</a></p>
     </div>
 
-    <script type="text/javascript">
-        window.onload = function() {
-            if (window.pageYOffset > 150) {
-                $(".Header").fadeIn('fast');
-            } else {
-                $(".Header").fadeOut('fast');
-            }
-        }
-        window.onscroll = function() {
-            if (window.pageYOffset > 150) {
-                $(".Header").fadeIn('fast');
-                $(".Footer").fadeOut('fast');
-            } else {
-                $(".Header").fadeOut('fast');
-                $(".Footer").fadeIn('fast');
-            }
-        }
-
-    </script>
+    <h2 id="Home">2章</h2>
     <div class="BackGround">
 
         <!--サイドメニュー-->
@@ -71,9 +55,9 @@
         <div class="PaperBackGround">
 
 
-            <div class="FriendsHeader Mincho">
+            <h2 class="Mincho">
                 Characters
-            </div>
+            </h2>
             <div class="FriendsSub Mincho">
                 キャラクター
             </div>
@@ -157,164 +141,23 @@
                 <p class="CircleText">
                     エテーネルの作るふかし芋が大好き。本人曰くふかし芋は体によく恰好のダイエット食品らしいが実はふかし芋のせいで太っている。おっとりまったりした性格で周囲のゆるキャラ的存在。</p>
             </div>
-            <p>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-            </p>
-            <!--紙背景おわり-->
-
+            <br><br>
+            <div class="SmallCharacter">
+                <a href="characters.html">
+                <img src="Assets/image/Characters/Charles.png">
+                </a>
+            </div>
+            <div class="SmallCharacter">
+                <a href="characters.html">
+                <img src="Assets/image/Characters/Charles.png">
+                </a>
+            </div>
+            <div class="SmallCharacter">
+                <a href="characters.html">
+                <img src="Assets/image/Characters/Charles.png">
+                </a>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
             <!--フッター-->
             <div class="Footer">
@@ -323,7 +166,11 @@
             </div>
         </div>
     </div>
+    <div class="ScrollUp">
+        <a href="#"><img src = "Assets/image/scroll-up.png"></a>
+    </div>
     <!--全体背景おわり-->
+
 </body>
 
 </html>

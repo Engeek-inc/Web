@@ -63,25 +63,31 @@ img.LogoHeaderImg {
 
 .CatchCopy {
     position: relative;
-    width: 30%;
+    width: 100%;
     height: auto;
-    top: 5em;
     left: 1%;
     display: inline;
+}
+
+.CatchCopy span {
+    position: absolute;
+    font-size: 1.5vw;
+    left: 2em;
+    width: 40vw;
+    display: flex;
+    top: 2em;
+    line-height: 200%;
 }
 
 img.CatchCopyImg {
     width: 70%;
     height: auto;
-    display: inline;
 }
 
 .TitlePhoto {
-    position: relative;
-    width: 40%;
+    position: absolute;
+    width: 100vw;
     height: auto;
-    left: 40%;
-
     transform: rotateZ(5deg);
     box-shadow: 5px 5px 10px #555;
     -webkit-box-shadow: 5px 5px 10px #555;
@@ -89,25 +95,43 @@ img.CatchCopyImg {
 
 }
 
-img.TitlePhotoImg {
+.TitlePhoto img {
+    position: absolute;
     width: 30%;
     height: auto;
-    transform: translateY(1.5%);
-    display: inline;
-    right: 2em;
+    right: 20%;
+    margin-left: 5em;
+
 }
 
-.PleaseScroll {
-    position: absolute;
-    width: 8%;
-    height: auto;
-    bottom: 1em;
+
+.PleaseScroll img {
+    width: 9vw;
 }
 
-img.PleaseScrollImg {
-    width: 100%;
-    height: auto;
+@media screen and (min-width: 600px) {
+    .PleaseScroll img {
+        width: 9vw;
+    }
+    .PleaseScroll {
+        position: relative;
+        top: 10em;
+        left: 10em;
+    }
 }
+
+@media screen and (max-width: 600px) {
+    .PleaseScroll img {
+        width: 10em;
+    }
+    .PleaseScroll {
+        position: relative;
+        top: 40vh;
+        left: 4.5em;
+    }
+}
+
+
 
 /* ウィンドウ幅が0〜 750pxの場合に適用するCSS */
 
@@ -128,13 +152,7 @@ img.TitlePhotoImg {
     transform: translateY(1.5%);
 }
 
-.PleaseScroll {
-    position: absolute;
-    width: 20%;
-    height: auto;
-    top: 76%;
-    left: 35%
-}
+
 
 img.PleaseScrollImg {
     width: 100%;
@@ -224,7 +242,7 @@ img.Circle:hover {
     margin: 0 auto;
 }
 
-.FriendsHeader {
+h2 {
     position: relative;
     transform-origin: left;
     text-align: left;
@@ -233,6 +251,7 @@ img.Circle:hover {
     top: 5%;
     margin: 0 auto;
 }
+
 
 @media screen and (min-width: 600px) {
     img.Circle {
@@ -245,7 +264,7 @@ img.Circle:hover {
         margin-bottom: 5%;
         line-height: 200%;
     }
-    .FriendsHeader {
+    h2 {
         font-size: 3.5em;
     }
 }
@@ -258,7 +277,7 @@ img.Circle:hover {
     p.CircleText {
         margin-top: 10em;
     }
-    .FriendsHeader {
+    h2 {
         font-size: 2em;
     }
 }
@@ -268,19 +287,31 @@ p.CircleText:first-letter {
     font-size: 2em;
 }
 
-.Line_Chara_L {
-    border-top: 1px solid #2A2421;
-    height: 4.166%;
-    top: 0px;
-    transform: translateY(-80%);
+.SmallCharacter {
+    position: relative;
+    text-align: center;
 }
 
-.CharaText {
-    width: 100%;
-    font-size: .7em;
-    height: 27.08%;
-    transform: translateY(-17.5%);
-    color: #2A2421;
+.SmallCharacter img {
+    border-radius: 2000px;
+    -moz-border-image: border-radius 200px;
+    -webkit-border-image: border-radius 200px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 1em;
+    transition: all 300ms 0s ease;
+    width: 6em;
+    height: 6em;
+    transition: all 300ms 0s ease;
+}
+
+.SmallCharacter img:hover {
+    -webkit-filter: brightness(0.4);
+    -moz-filter: brightness(0.4);
+    -o-filter: brightness(0.4);
+    -ms-filter: brightness(0.4);
+    filter: brightness(0.4);
+    color: white;
 }
 
 img.PleaseScrollImg {
@@ -390,6 +421,7 @@ div.Header {
     background-color: white;
     background-image: url(BrickUI.jpg);
     background-size: 30em;
+    color: white;
 }
 
 div.Header p {
@@ -399,27 +431,29 @@ div.Header p {
     margin-left: 2em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}
-
-div.Header a {
-    color: black;
-    text-decoration: none;
-    display: block;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    color: white;
+    font-weight: 500;
     transition: all 300ms 0s ease;
 }
 
-div.Header a:hover {
-    padding-left: 0.7em;
-    padding-right: 0.7em;
+div.Header a {
+    text-decoration: none;
+    display: block;
+    transition: all 300ms 0s ease;
+    color: white;
 }
 
+div.Header p:hover {
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
 
 div.Header a:after {
     content: "";
     width: 0%;
-    border-bottom: 1px solid #2A2421;
+    border-bottom: 2px solid #2A2421;
     transition: all 300ms 0s ease;
     display: block;
 }
@@ -427,7 +461,7 @@ div.Header a:after {
 div.Header a:hover:after {
     content: "";
     width: 100%;
-    border-bottom: 1px solid #2A2421;
+    border-bottom: 2px solid #2A2421;
     transition: all 300ms 0s ease;
     display: block;
 }
@@ -491,6 +525,56 @@ img.GooglePlayBanner {
 
 .Title {
     text-align: center;
-    font-size: 6vw;
-    margin-top: 2em;
+    margin-top: 1em;
+}
+
+.SubTitle {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.SubSubTitle {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.ContentOfTitle {
+    position: absolute;
+    width: 45vw;
+    line-height: 150%;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 600px) {
+    .Title {
+        font-size: 6vw;
+    }
+    .SubTitle {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Title {
+        font-size: 5em;
+        margin-left: -0.3em;
+    }
+    .SubTitle {
+        font-size: 1em;
+    }
+}
+
+.ScrollUp {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ScrollUp img {
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+    height: auto;
 }
