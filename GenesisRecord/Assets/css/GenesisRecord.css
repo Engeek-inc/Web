@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
 html {
     overflow: auto;
+    margin: 0, 0, 0, 0;
+    padding: 0, 0, 0, 0;
 }
 
 body {
