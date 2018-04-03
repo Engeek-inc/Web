@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+@font-face {
+    font-family: "Allura";
+    src: url(fonts/Allura-Regular.otf);
+}
+
 html {
     overflow: auto;
 }
@@ -12,12 +17,16 @@ body {
     font-family: 'Sawarabi Mincho';
 }
 
+.Allura {
+    font-family: "Allura";
+}
+
 .BackGround {
     background-color: #2A2421;
-    top: 0px;
 }
 
 .PaperBackGround {
+    position: absolute;
     background-color: #DDD1C2;
     background-image: url(../image/PaperTex.jpg);
     width: 88.888%;
@@ -28,6 +37,8 @@ body {
     box-shadow: 5px 5px 10px #000;
     -webkit-box-shadow: 5px 5px 10px #000;
     -moz-box-shadow: 5px 5px 10px #000;
+    top: 0px;
+    left: 0px;
 }
 
 .LogoHeader {
@@ -51,24 +62,25 @@ img.LogoHeaderImg {
 }
 
 .CatchCopy {
-    position: absolute;
+    position: relative;
     width: 30%;
     height: auto;
-    top: 15%;
+    top: 5em;
     left: 1%;
+    display: inline;
 }
 
 img.CatchCopyImg {
-    width: 100%;
+    width: 70%;
     height: auto;
+    display: inline;
 }
 
 .TitlePhoto {
-    position: absolute;
+    position: relative;
     width: 40%;
     height: auto;
-    top: 15%;
-    right: 20%;
+    left: 40%;
 
     transform: rotateZ(5deg);
     box-shadow: 5px 5px 10px #555;
@@ -78,17 +90,18 @@ img.CatchCopyImg {
 }
 
 img.TitlePhotoImg {
-    width: 100%;
+    width: 30%;
     height: auto;
     transform: translateY(1.5%);
+    display: inline;
+    right: 2em;
 }
 
 .PleaseScroll {
     position: absolute;
     width: 8%;
     height: auto;
-    top: 75%;
-    left: 40%;
+    bottom: 1em;
 }
 
 img.PleaseScrollImg {
@@ -98,56 +111,35 @@ img.PleaseScrollImg {
 
 /* ウィンドウ幅が0〜 750pxの場合に適用するCSS */
 
-@media screen and ( max-width:750px) {
-
-    .CatchCopy {
-        position: absolute;
-        width: 68%;
-        height: auto;
-        top: 10%;
-        left: 5%;
-    }
-
-    img.CatchCopyImg {
-        width: 100%;
-        height: auto;
-    }
-
-    .TitlePhoto {
-        position: absolute;
-        width: 70%;
-        height: auto;
-        top: 40%;
-        left: 10%;
-
-        transform: rotateZ(5deg);
-        box-shadow: 5px 5px 10px #555;
-        -webkit-box-shadow: 5px 5px 10px #555;
-        -moz-box-shadow: 5px 5px 10px #555;
-
-    }
-
-    img.TitlePhotoImg {
-        width: 100%;
-        height: auto;
-        transform: translateY(1.5%);
-    }
-
-    .PleaseScroll {
-        position: absolute;
-        width: 20%;
-        height: auto;
-        top: 76%;
-        left: 35%
-    }
-
-    img.PleaseScrollImg {
-        width: 100%;
-        height: auto;
-    }
+.CatchCopy {
+    position: relative;
+    top: 10%;
+    text-align: center;
 }
 
+img.CatchCopyImg {
+    width: 30%;
+    height: auto;
+}
 
+img.TitlePhotoImg {
+    width: 30%;
+    height: auto;
+    transform: translateY(1.5%);
+}
+
+.PleaseScroll {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    top: 76%;
+    left: 35%
+}
+
+img.PleaseScrollImg {
+    width: 100%;
+    height: auto;
+}
 
 
 
@@ -156,13 +148,14 @@ img.PleaseScrollImg {
     padding: 0.25em 2em;
     margin: 20px, 20px;
     color: #716151;
+    width: 75vw;
 }
 
 .CharacterBorder:before,
 .CharacterBorder:after {
     content: '';
     width: 20px;
-    height: 30px;
+    height: 20px;
     position: absolute;
     display: inline-block;
 }
@@ -191,11 +184,15 @@ img.PleaseScrollImg {
     margin-bottom: 1em;
     font-size: 1.5em;
     position: relative;
-    padding: 0.5em 1.5em;
     border-bottom: 1px solid;
 }
 
-div.Circle {}
+.CharacterSub {
+    position: relative;
+    font-size: 0.9em;
+    font-family: "Allura";
+    margin-left: 0.3em;
+}
 
 img.Circle {
 
@@ -222,7 +219,7 @@ img.Circle:hover {
     transform-origin: left;
     text-align: left;
     color: #876543;
-    left: 6%;
+    left: 2%;
     font-size: 1em;
     margin: 0 auto;
 }
@@ -232,7 +229,7 @@ img.Circle:hover {
     transform-origin: left;
     text-align: left;
     color: #876543;
-    left: 5%;
+    left: 2%;
     top: 5%;
     margin: 0 auto;
 }
@@ -244,8 +241,9 @@ img.Circle:hover {
     }
     p.CircleText {
         margin-left: 15em;
-        margin-top: 1em;
+        margin-top: 2em;
         margin-bottom: 5%;
+        line-height: 200%;
     }
     .FriendsHeader {
         font-size: 3.5em;
@@ -272,7 +270,6 @@ p.CircleText:first-letter {
 
 .Line_Chara_L {
     border-top: 1px solid #2A2421;
-    ;
     height: 4.166%;
     top: 0px;
     transform: translateY(-80%);
@@ -337,14 +334,13 @@ img.PleaseScrollImg {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f8096', endColorstr='#b5b3d3', GradientType=1);
     /* IE6-9 */
     display: block;
+    font-family: Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
     right: 8px;
     color: #000000;
     width: 10.7%;
     height: 14.583%;
     border-top-right-radius: 3.7037%;
     border-bottom-right-radius: 3.7037%;
-    font-family: Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
-
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
@@ -381,6 +377,60 @@ img.PleaseScrollImg {
     top: 56.25%;
 }
 
+div.Header {
+    position: fixed;
+    height: 3.5em;
+    width: 100vw;
+    padding: 0px, 0px, 0px, 0px;
+    margin: 0px, 0px, 0px, 0px;
+    left: 0em;
+    top: 0px;
+    font-family: 'Sawarabi Mincho';
+    z-index: 100;
+    background-color: white;
+    background-image: url(BrickUI.jpg);
+    background-size: 30em;
+}
+
+div.Header p {
+    position: relative;
+    display: inline-block;
+    margin: 1em;
+    margin-left: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+div.Header a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    transition: all 300ms 0s ease;
+}
+
+div.Header a:hover {
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+}
+
+
+div.Header a:after {
+    content: "";
+    width: 0%;
+    border-bottom: 1px solid #2A2421;
+    transition: all 300ms 0s ease;
+    display: block;
+}
+
+div.Header a:hover:after {
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid #2A2421;
+    transition: all 300ms 0s ease;
+    display: block;
+}
 
 .Footer {
     position: fixed;
@@ -439,17 +489,8 @@ img.GooglePlayBanner {
     width: 11em;
 }
 
-
-
-.Bar1 {
-    top: 100%;
-    height: 2%;
-    background-color: #FFFFFF;
-}
-
-.Bar2 {
-    bottom 0%;
-    height: 2%;
-    background-color: #00395E;
-    transform: translateY(450%);
+.Title {
+    text-align: center;
+    font-size: 6vw;
+    margin-top: 2em;
 }

@@ -1,195 +1,203 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8"/>
-  <head>
-    <!-- ビューポートの設定 -->
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-</head>
-<title>Genesis Record Top</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8" />
 
-<!--cssの読み込み-->
-<link rel="stylesheet" href="Assets/css/GenesisRecord.css" type="text/css" />
-<link rel="stylesheet" href="Assets/css/jquery.fullPage.css" type="text/css" />
+    <head>
+        <!-- ビューポートの設定 -->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <title>Genesis Record Top</title>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="Assets/js/jquery.fullPage.js"></script>
+    <!--cssの読み込み-->
+    <link rel="stylesheet" href="Assets/css/GenesisRecord.css" type="text/css" />
+    <link rel="stylesheet" href="Assets/css/jquery.fullPage.css" type="text/css" />
 
-<!--大きな背景-->
-<div class="BackGround">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Assets/js/jquery.fullPage.js"></script>
 
-
-<!--サイドメニュー-->
-<div class="SideButtonSelected SideButtonPositionTop0">
-  <p>
-    ストーリー
-  </p>
-  <a href="index.html"></a>
-</div>
-
-<div class="SideButtonDeSelected SideButtonPositionTop1">
-  <p>
-    キャラクター
-  </p>
-  <a href="characters.html"></a>
-</div>
-
-<div class="SideButtonDeSelected SideButtonPositionTop2">
-<p>
-  システム
-</p>
-</div>
-
-<div class="SideButtonDeSelected SideButtonPositionTop3">
-<p>
-  ギャラリー
-</p>
-</div>
-
-<!--本の紙の背景-->
-<div class="PaperBackGround">
-
-  <div id="fullpage">
-      <div class="section active" id="section0">
-
-<!--キャッチコピー-->
-<div class="CatchCopy">
-  <img src="Assets/image/WebProt-02.svg" class="CatchCopyImg"/>
-</div>
-
-<!--写真-->
-<div class="TitlePhoto">
-  <img src="Assets/image/TitlePhoto.jpg" class="TitlePhotoImg"/>
-</div>
-
-<!--スクロールしてください-->
-<div class="PleaseScroll">
-  <img src="Assets/image/PleaseScroll-03.svg" class="PleaseScrollImg"/>
-</div>
-
-<p>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-</p>
-
-
-</div>
-
-<div class="section" id="section1">
-
-</div>
-
-</div><!--フルページ終了-->
-
-<p>
-
-</p>
-
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-</p>
-
-
-
-
-<!--フッター-->
-  <div class="Footer">
-    <div class="Bar1">
+    <!--Begin Header-->
+    <div class="Header">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="characters.html">Characters</a></p>
+        <p><a href="index.html">Story</a></p>
     </div>
-      <img src="Assets/image/GenesisRecordLogo-04.svg" class="GenesisRecordLogoImg" />
-      <div class"FooterText">
-        <p class="FooterText2">
-          2017年9月末配信開始！
-        </p>
-      </div>
-    <div class="BannersParent">
-      <img src="Assets/image/Download_on_the_App_Store_JP_135x40.svg" class="AppStoreBanner"/>
-      <img src="Assets/image/google-play-badge.png" class="GooglePlayBanner"/>
-      <div class="Bar2">
-      </div>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            if (window.pageYOffset > 150) {
+                $(".Header").hide();
+            } else {
+                $(".Header").fadeOut('fast');
+            }
+        }
+        window.onscroll = function() {
+            if (window.pageYOffset > 150) {
+                $(".Header").fadeIn('fast');
+                $(".Footer").fadeOut('fast');
+            } else {
+                $(".Header").fadeOut('fast');
+                $(".Footer").fadeIn('fast');
+            }
+        }
+
+    </script>
+    <!--大きな背景-->
+    <div class="BackGround">
+
+
+        <!--サイドメニュー-->
+        <div class="SideButtonSelected SideButtonPositionTop0">
+            <p>
+                ストーリー
+            </p>
+            <a href="index.html"></a>
+        </div>
+
+        <div class="SideButtonDeSelected SideButtonPositionTop1">
+            <p>
+                キャラクター
+            </p>
+            <a href="characters.html"></a>
+        </div>
+
+        <div class="SideButtonDeSelected SideButtonPositionTop2">
+            <p>
+                システム
+            </p>
+        </div>
+
+        <div class="SideButtonDeSelected SideButtonPositionTop3">
+            <p>
+                ギャラリー
+            </p>
+        </div>
+
+        <!--本の紙の背景-->
+        <div class="PaperBackGround">
+            <!--キャッチコピー-->
+            <div class="CatchCopy">
+                <img src="Assets/image/engeeklogo2.svg" class="CatchCopyImg" />
+                <img src="Assets/image/TitlePhoto.jpg" class="TitlePhotoImg" />
+                <div class="Title Allura">Genesis Record</div>
+                <div class="PleaseScroll">
+                    <img src="Assets/image/PleaseScroll-03.svg" class="PleaseScrollImg" />
+                </div>
+            </div>
+
+            <!--スクロールしてください-->
+
+            <p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </p>
+
+
+        </div>
+
+        <div class="section" id="section1">
+
+
+            <!--フルページ終了-->
+
+            <p>
+
+            </p>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+
+
+
+            <!--フッター-->
+            <div class="Footer">
+                <img src="Assets/image/Appstore_Badge.svg" class="AppStoreBanner" />
+                <img src="Assets/image/google-play-badge.png" class="GooglePlayBanner" />
+            </div>
+
+        </div>
+        <!--紙背景おわり-->
+
     </div>
-  </div>
-
-</div><!--紙背景おわり-->
-
-</div>
