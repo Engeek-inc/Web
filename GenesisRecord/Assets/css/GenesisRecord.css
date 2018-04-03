@@ -147,201 +147,8 @@ img.PleaseScrollImg {
     }
 }
 
-.FriendsSub {
-    position: absolute;
-    transform-origin: left;
-    text-align: left;
-    color: #876543;
-    height: 4.166%;
-    left: 6%;
-    width: 44.444%;
-    font-size: 1em;
-    top: 12%;
-    margin: 0 auto;
-}
-
-.FriendsHeader {
-    position: absolute;
-    transform-origin: left;
-    text-align: left;
-    color: #876543;
-    height: 4.166%;
-    left: 5%;
-    width: 44.444%;
-    font-size: 3.5em;
-    top: 5%;
-    margin: 0 auto;
-}
 
 
-.Line_Top {
-    position: absolute;
-    transform-origin: center;
-    text-align: center;
-    height: 4.166%;
-    width: 50vw;
-    top: 10%;
-    max-width: 50%;
-    text-align: center;
-    margin: 0 auto;
-}
-
-img.SepatratorImg {
-    width: 40%;
-}
-
-/* ウィンドウ幅が0〜 750pxの場合に適用するCSS */
-
-@media screen and ( max-width:750px) {
-
-    img.SepatratorImg {
-        width: 100%;
-    }
-
-}
-
-/* キャラクター配置（デスクトップ用） */
-
-img.CharaImg {
-    position: absolute;
-    width: auto;
-    height: 33.33%;
-}
-
-img.CharaPos01 {
-    top: 20.83%;
-    left: 33%;
-}
-
-img.CharaPos02 {
-    top: 20.83%;
-    right: 18.52%;
-}
-
-img.CharaPos03 {
-    top: 59%;
-    right: 46%;
-}
-
-img.CharaPos04 {
-    top: 59%;
-    left: 3.7%;
-}
-
-img.CharaPos05 {
-    top: 97.91%;
-    right: 18.52%;
-}
-
-img.CharaPos06 {
-    top: 97.91%;
-    left: 33%;
-}
-
-.CharaExplain {
-    position: absolute;
-    width: 24%;
-}
-
-.CharaExplainPos01 {
-    top: 16.66%;
-}
-
-.CharaExplainPos02 {
-    top: 16.66%;
-    left: 45%;
-}
-
-.CharaExplainPos03 {
-    top: 54.17%;
-    left: 15%;
-}
-
-.CharaExplainPos04 {
-    top: 54.17%;
-    right: 18.52%;
-}
-
-.CharaExplainPos05 {
-    top: 91.68%;
-    left: 45%;
-}
-
-.CharaExplainPos06 {
-    top: 91.68%;
-    left: 3.704%;
-}
-
-img.CharaImg {
-    position: absolute;
-    width: auto;
-    height: 33.33%;
-}
-
-img.CharaPos01 {
-    top: 20.83%;
-    left: 56%;
-}
-
-img.CharaPos02 {
-    top: 58.33%;
-    left: 3.7%;
-}
-
-img.CharaPos03 {
-    top: 97.91%;
-    right: 18.52%;
-}
-
-img.CharaPos04 {
-    top: 135.41%;
-    left: 3.7%;
-}
-
-img.CharaPos05 {
-    top: 174.99%;
-    right: 18.52%;
-}
-
-img.CharaPos06 {
-    top: 212.49%;
-    left: 3.7%;
-}
-
-.CharaExplain {
-    position: absolute;
-    width: 44.44%;
-}
-
-.CharaExplainPos01 {
-    top: 16.66%;
-    left: 3.704%;
-}
-
-.CharaExplainPos02 {
-    top: 54.17%;
-    right: 18.52%;
-}
-
-.CharaExplainPos03 {
-    top: 93.74%;
-    left: 3.704%;
-}
-
-.CharaExplainPos04 {
-    top: 131.25%;
-    right: 18.52%;
-}
-
-.CharaExplainPos05 {
-    top: 170.82%;
-    left: 3.704%;
-}
-
-.CharaExplainPos06 {
-    top: 208.33%;
-    right: 18.52%;
-}
 
 
 .CharacterBorder {
@@ -408,15 +215,38 @@ img.Circle:hover {
     color: white;
 }
 
+.FriendsSub {
+    position: relative;
+    transform-origin: left;
+    text-align: left;
+    color: #876543;
+    left: 6%;
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+.FriendsHeader {
+    position: relative;
+    transform-origin: left;
+    text-align: left;
+    color: #876543;
+    left: 5%;
+    top: 5%;
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 600px) {
     img.Circle {
         height: 90%;
         width: auto;
     }
-    p.CircleText{
-    margin-left: 15em;
-    margin-top: 1em;
-    margin-bottom: 5%;
+    p.CircleText {
+        margin-left: 15em;
+        margin-top: 1em;
+        margin-bottom: 5%;
+    }
+    .FriendsHeader {
+        font-size: 3.5em;
     }
 }
 
@@ -425,8 +255,11 @@ img.Circle:hover {
         width: 37%;
         height: auto;
     }
-    p.CircleText{
-    margin-top: 10em;
+    p.CircleText {
+        margin-top: 10em;
+    }
+    .FriendsHeader {
+        font-size: 2em;
     }
 }
 
