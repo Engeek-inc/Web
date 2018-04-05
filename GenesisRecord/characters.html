@@ -9,6 +9,7 @@
     <script src="Assets/js/HFControl.js"></script>
     <!--cssの読み込み-->
     <link rel="stylesheet" href="Assets/css/GenesisRecord.css" type="text/css" />
+    <link rel="stylesheet" href="Assets/css/Characters.css" type="text/css" />
     <!--Fabicon-->
     <link rel="apple-touch-icon-precomposed" href="Assets/image/AppIcon3.png">
     <link rel="shortcut icon" href="Assets/image/AppIcon3.png">
@@ -17,60 +18,22 @@
 <body>
     <!--大きな背景-->
     <!--Begin Header-->
-    <header>
-        <p><a href="index.html">Home</a></p>
-        <p><a href="characters.html">Characters</a></p>
-        <p><a href="index.html">Story</a></p>
-
-        <div id="nav-drawer">
-            <input id="nav-input" type="checkbox" class="nav-unshown">
-            <label id="nav-open" for="nav-input"><span></span></label>
-            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-            <div id="nav-content">ここに中身を入れる</div>
-        </div>
-    </header>
-
+    <header></header>
+    <script src="Assets/js/HeaderLoader.js"></script>
+    <!--全体背景おわり-->
     <div class="BackGround">
-
         <!--サイドメニュー-->
-        <div class="SideButtonDeSelected SideButtonPositionTop0">
-            <p>
-                ストーリー
-            </p>
-            <a href="index.html"></a>
-        </div>
-
-        <div class="SideButtonSelected SideButtonPositionTop1">
-            <p>
-                キャラクター
-            </p>
-            <a href="characters.html"></a>
-        </div>
-
-        <div class="SideButtonDeSelected SideButtonPositionTop2">
-            <p>
-                システム
-            </p>
-        </div>
-
-        <div class="SideButtonDeSelected SideButtonPositionTop3">
-            <p>
-                ギャラリー
-            </p>
-        </div>
-
+        <article class="SideBar"></article>
 
         <!--本の紙の背景-->
         <div class="PaperBackGround">
 
+            <div class="Mock">Mock</div>
 
-            <h2 class="Mincho">
-                Characters
-            </h2>
-            <div class="FriendsSub Mincho">
-                キャラクター
-            </div>
-            <br><br><br>
+            <article class="Title Left Mincho" id="Sec2">Characters
+                <article class="SubTitle Mincho">キャラクター</article>
+            </article>
+            <br><br>
             <div class="CharacterBorder Mincho">
                 <p class="CharacterTitle Mincho">
                     シュヴァリエ・フラム
@@ -151,21 +114,6 @@
                     エテーネルの作るふかし芋が大好き。本人曰くふかし芋は体によく恰好のダイエット食品らしいが実はふかし芋のせいで太っている。おっとりまったりした性格で周囲のゆるキャラ的存在。</p>
             </div>
             <br><br><br><br>
-            <div class="SmallCharacter">
-                <a href="characters.html">
-                <img src="Assets/image/Characters/Charles.png">
-                </a>
-            </div>
-            <div class="SmallCharacter">
-                <a href="characters.html">
-                <img src="Assets/image/Characters/Charles.png">
-                </a>
-            </div>
-            <div class="SmallCharacter">
-                <a href="characters.html">
-                <img src="Assets/image/Characters/Charles.png">
-                </a>
-            </div>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
             <!--フッター-->
@@ -178,8 +126,6 @@
     <div class="ScrollUp">
         <a href="#"><img src = "Assets/image/scroll-up.png"></a>
     </div>
-    <!--全体背景おわり-->
-
 </body>
 
 </html>

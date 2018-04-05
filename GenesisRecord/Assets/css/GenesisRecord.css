@@ -22,13 +22,22 @@ body {
 
 .BackGround {
     background-color: #2A2421;
+    height: auto;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    height: 300vh;
 }
 
 .PaperBackGround {
     position: absolute;
     background-color: #DDD1C2;
     background-image: url(../image/PaperTex.jpg);
-    width: 88%;
+    width: calc(100vw - 5em);
     height: auto;
     background-blend-mode: multiply;
     border-top-right-radius: 16px;
@@ -166,7 +175,7 @@ img.PleaseScrollImg {
     padding: 0.25em 2em;
     margin: 20px, 20px;
     color: #716151;
-    width: 75vw;
+    width: 65vw;
 }
 
 .CharacterBorder:before,
@@ -214,7 +223,7 @@ img.PleaseScrollImg {
 
 img.Circle {
     width: 15em;
-    border: 1px solid black;
+    border: 1px solid #716151;
     border-radius: 2000px;
     -moz-border-image: border-radius 200px;
     -webkit-border-image: border-radius 200px;
@@ -238,25 +247,46 @@ img.Circle:hover {
     transform-origin: left;
     text-align: left;
     color: #6C3D0E;
-    left: 2%;
+    left: 2em;
     font-size: 1em;
-    margin: -1em auto;
+    margin: -0.5em auto;
 }
 
-h2 {
+article.Title {
     position: relative;
     transform-origin: left;
-    text-align: left;
     color: #6C3D0E;
-    left: 2%;
-    top: 5%;
+    left: 0.5em;
+    top: 0.5em;
     margin: 0 auto;
+    margin-left: 0px;
+}
+
+article.BorderBottom {
+    border-bottom: 1px solid #6C3D0E;
+}
+
+article.Right {
+    text-align: right;
+}
+
+article.Left {
+    text-align: left;
+}
+
+article.Center {
+    text-align: center;
+}
+
+article.Title::after {
+    content: "";
+    right: 7em;
 }
 
 
 @media screen and (min-width: 600px) {
     img.Circle {
-        height: 90%;
+        height: 13em;
         width: auto;
     }
     p.CircleText {
@@ -265,8 +295,25 @@ h2 {
         margin-bottom: 5%;
         line-height: 200%;
     }
-    h2 {
-        font-size: 3.5em;
+    article.Title {
+        font-size: 2em;
+        position: relative;
+        width: 80vw;
+        font-family: 'Sawarabi Mincho';
+    }
+    .FriendsSub {
+        position: absolute;
+        top: 6em;
+        left: 8em;
+    }
+    article.Title:first-letter {
+        font-size: 2em;
+    }
+    article.SubTitle {
+        font-size: 0.3em;
+        position: relative;
+        display: inline;
+        font-family: 'Sawarabi Mincho';
     }
 }
 
@@ -278,20 +325,164 @@ h2 {
     p.CircleText {
         margin-top: 10em;
     }
-    h2 {
+    article.Title:first-letter {
         font-size: 2em;
+    }
+    article.Title {
+        font-size: 1.5em;
+        position: relative;
+        width: 70vw;
+        font-family: 'Sawarabi Mincho';
+    }
+    article.SubTitle {
+        font-size: 0.3em;
+        position: relative;
+        display: inline;
+        font-family: 'Sawarabi Mincho';
+    }
+    .FriendsSub {
+        top: 1em;
     }
 }
 
+article.Content {
+    position: relative;
+    transform-origin: left;
+    color: #6C3D0E;
+    left: 2.5em;
+    top: 1.5em;
+    font-family: 'Sawarabi Mincho';
+    word-wrap: break-word;
+    width: 80vw;
+}
+
+article.Content a {
+    text-decoration: none;
+    color: #6C3D0E;
+    border-bottom: 1px solid #6C3D0E;
+    transition: all 300ms 0s ease;
+}
+
+article.Content a:hover {
+    text-decoration: none;
+    color: #6C3D0E;
+    opacity: 0.5;
+}
+
+.TwitterBox {
+    text-align: right;
+    position: absolute;
+}
+
+article.NarrowContent {
+    position: relative;
+    transform-origin: left;
+    color: #6C3D0E;
+    left: 2.5em;
+    top: 1.5em;
+    font-family: 'Sawarabi Mincho';
+    word-wrap: break-word;
+    width: 50vw;
+}
+
+@media screen and (max-width: 600px) {
+    article.Content {
+        position: relative;
+        transform-origin: left;
+        color: #6C3D0E;
+        left: 1em;
+        top: 1.5em;
+        font-family: 'Sawarabi Mincho';
+        word-wrap: break-word;
+        width: 70vw;
+    }
+    article.NarrowContent {
+        position: relative;
+        transform-origin: left;
+        color: #6C3D0E;
+        left: 1em;
+        top: 1.5em;
+        font-family: 'Sawarabi Mincho';
+        word-wrap: break-word;
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .TwitterBox {
+        top: 0em;
+        width: 80vw;
+        margin-right: 0px;
+    }
+    article.NarrowContent {
+        position: relative;
+        transform-origin: left;
+        color: #6C3D0E;
+        font-family: 'Sawarabi Mincho';
+        word-wrap: break-word;
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .TwitterBox {
+        width: 80vw;
+        margin-right: 0px;
+        display: inline;
+        position: relative;
+        text-align: center;
+    }
+    article.NarrowContent {
+        position: relative;
+        transform-origin: left;
+        color: #6C3D0E;
+        font-family: 'Sawarabi Mincho';
+        word-wrap: break-word;
+        width: 70vw;
+    }
+}
 
 p.CircleText:first-letter {
     font-size: 2em;
 }
 
-.SmallCharacter {
-    position: relative;
-    text-align: center;
+
+@media screen and (min-width: 600px) {
+    .SmallCharacter {
+        position: relative;
+        text-align: center;
+        margin-left: -7em;
+        margin-right: 7em;
+    }
+    .SmallCharacter span {
+        padding-left: 9em;
+        padding-right: 1.5em;
+    }
 }
+
+@media screen and (max-width: 600px) {
+    .SmallCharacter {
+        position: relative;
+        text-align: center;
+        margin-left: -7em;
+        margin-right: 7em;
+    }
+
+    .SmallCharacter span {
+        padding-left: 9em;
+        padding-right: 1.5em;
+    }
+    .SmallCharacter::before {
+        content: "¥n";
+    }
+}
+
+
+
+.SmallCharacter span a {
+    text-decoration: none;
+}
+
 
 .SmallCharacter img {
     border-radius: 2000px;
@@ -328,7 +519,7 @@ img.PleaseScrollImg {
     color: #FFFFFF;
     background-image: url(../image/PaperTex.jpg);
     background-blend-mode: multiply;
-    width: 13.70%;
+    width: 5em;
     height: 14.583%;
     border-radius: 3.7037%;
     font-family: Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
@@ -369,7 +560,7 @@ img.PleaseScrollImg {
     font-family: Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
     right: 8px;
     color: #000000;
-    width: 10.7%;
+    width: 5em;
     height: 14.583%;
     border-top-right-radius: 3.7037%;
     border-bottom-right-radius: 3.7037%;
@@ -391,7 +582,6 @@ img.PleaseScrollImg {
     border-bottom-right-radius: 3.7037%;
 
 }
-
 
 .SideButtonPositionTop0 {
     top: 6.25%;
@@ -540,7 +730,6 @@ header a:hover:after {
         max-width: 330px;
         /*最大幅*/
         height: 100%;
-        background: #fff;
         color: black;
         /*背景色*/
         transition: .3s ease-in-out;
@@ -563,6 +752,39 @@ header a:hover:after {
         /*中身を表示*/
         box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
     }
+}
+
+@media screen and (min-width: 600px) {
+    #nav-input {
+        opacity: 0;
+    }
+    #nav-content {
+        opacity: 0;
+    }
+}
+
+#nav-content {
+    background-image: url(PaperTex.jpg);
+}
+
+
+#nav-content a {
+    text-decoration: none;
+    border: none;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    color: #6C3D0E;
+    font-family: "Sawarabi Mincho";
+    transition: .2s ease-in-out;
+    border-bottom: 1px solid #6C3D0E;
+}
+
+#nav-content a:hover {
+    border-bottom: 1px solid #6C3D0E;
+    text-decoration: none;
+    border: none;
+    margin-left: 1.5em;
+    opacity: 0.5;
 }
 
 .Footer {

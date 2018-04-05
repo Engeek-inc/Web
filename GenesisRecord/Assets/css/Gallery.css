@@ -1,0 +1,32 @@
+div.Slider {
+    text-align: center;
+    width: calc(100vw-7em);
+    height: calc(100vw-7em);
+}
+
+div.Slider img {
+    width: 50vw;
+    height: auto;
+}
+
+button.SliderButtonLeft {
+    width: 5em;
+    height: 5em;
+    border-radius: 2000px;
+    -moz-border-image: border-radius 200px;
+    -webkit-border-image: border-radius 200px;
+    position: absolute;
+    margin-top: 24%;
+    left: 5vw;
+}
+
+button.SliderButtonRight {
+    width: 5em;
+    height: 5em;
+    border-radius: 2000px;
+    -moz-border-image: border-radius 200px;
+    -webkit-border-image: border-radius 200px;
+    position: absolute;
+    margin-top: 24%;
+    right: 5vw;
+}
