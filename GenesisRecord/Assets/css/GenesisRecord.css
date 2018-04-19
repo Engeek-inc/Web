@@ -10,6 +10,7 @@ html {
 
 body {
     overflow: hidden;
+    background-color: #2A2421;
 }
 
 .Mincho {
@@ -22,7 +23,6 @@ body {
 
 .BackGround {
     background-color: #2A2421;
-    height: auto;
     margin: 0px, 0px, 0px, 0px;
     padding: 0px, 0px, 0px, 0px;
     top: 0px;
@@ -30,7 +30,7 @@ body {
     left: 0px;
     right: 0px;
     position: absolute;
-    height: 300vh;
+    height: 0px;
 }
 
 .PaperBackGround {
@@ -859,11 +859,23 @@ img.GooglePlayBanner {
     font-size: 0.9em;
 }
 
-.ContentOfTitle {
-    position: absolute;
-    width: 45vw;
-    line-height: 150%;
-    font-size: 1em;
+
+@media screen and(max-width: 600px) {
+    .ContentOfTitle {
+        position: absolute;
+        width: 45vw;
+        line-height: 150%;
+        font-size: 1em;
+    }
+}
+
+@media screen and(min-width: 600px) {
+    .ContentOfTitle {
+        position: absolute;
+        width: 45vw;
+        line-height: 150%;
+        font-size: 2em;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -898,4 +910,65 @@ img.GooglePlayBanner {
     margin: 0px;
     padding: 0px;
     height: auto;
+}
+
+i.TwitterIcon {
+    color: white;
+    font-style: normal;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+i.TwitterIcon:before {
+    font-size: 4vw;
+    font-family: "Font Awesome 5 Brands";
+    content: '\f081';
+}
+
+i.FacebookIcon {
+    color: white;
+    font-style: normal;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+i.FacebookIcon:before {
+    font-size: 4vw;
+    font-family: "Font Awesome 5 Brands";
+    content: '\f082';
+}
+
+i.YoutubeIcon {
+    color: white;
+    font-style: normal;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+i.YoutubeIcon:before {
+    font-size: 4vw;
+    font-family: "Font Awesome 5 Brands";
+    content: '\f167';
+}
+
+div.Icons {
+    text-align: center;
+    position: absolute;
+    right: 1vw;
+    bottom: 1vw;
+    margin-top: 1em;
+}
+
+footer {
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    widows: 100vw;
+    height: auto;
+    background-color: #5A5B5C;
+    color: white;
+    padding-left: 1em;
+    padding-top: 1em;
+    margin-bottom: -1.2em;
+    padding-bottom: 0.6em;
 }
