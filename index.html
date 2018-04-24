@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8" />
     <title>Engeek|Home</title>
@@ -16,7 +17,17 @@
 
 <body>
     <header><img src="Assets/image/engeeklogo_opacity.png">
-        <button>≡</button>
+        <!--
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span>≡</span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <a href="index.html">Home</a>
+                <a href="characters.html">Characters</a>
+                <a href="https://form.run/@engeek" target="_blank">βテスト</a>
+            </div>
+        </div>-->
     </header>
     <div class="Back">
         <div class="Title">ENGEEK
@@ -65,20 +76,38 @@
             <br>製品ページは<a class="Line" href="GenesisRecord/index.html" target="_blank">こちら</a></article>
 
         <article class="Title">社員紹介</article>
-        <section class="card">
-            <img class="card-img" src="Assets/image/Members/Test.JPG" alt="">
-            <div class="card-content">
-                <h1 class="card-title">福井　航大</h1>
-                <p class="card-text">デザイナー・取締役社長</p>
-            </div>
-            <div class="card-link">
-                <a href="http://webcreatorbox.com/about">雇用し続ける</a>
-                <a href="http://webcreatorbox.com/">クビにする</a>
-            </div>
-        </section>
+        <table>
+            <td>
+                <section class="card">
+                    <img class="card-img" src="Assets/image/Members/Test.JPG" alt="">
+                    <div class="card-content">
+                        <h1 class="card-title">福井　航大</h1>
+                        <p class="card-text">代表取締役CEO（デザイナー・プログラマ）</p>
+                    </div>
+                    <div class="card-link">
+                        <a href="">社員ブログ</a>
+                        <a href="">ひとこと</a>
+                    </div>
+                </section>
+            </td>
+            <td>
+                <section class="card">
+                    <img class="card-img" src="" alt="">
+                    <div class="card-content">
+                        <h1 class="card-title">佐藤　由弥</h1>
+                        <p class="card-text">取締役COO・CTO（プログラマ・デザイナー）</p>
+                    </div>
+                    <div class="card-link">
+                        <a href="">社員ブログ</a>
+                        <a href="">ひとこと</a>
+                    </div>
+                </section>
+            </td>
+        </table>
         <article class="Content">
             <br>
         </article>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <footer>
             <div class="FooterTitle">株式会社ENGEEK</div>
@@ -94,5 +123,7 @@
             return false;
         })
     });
+
 </script>
+
 </html>
