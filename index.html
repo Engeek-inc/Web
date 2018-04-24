@@ -1,46 +1,98 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8"/>
-<title>Engeek|Home</title>
-<!--Fabicon-->
-<link rel="apple-touch-icon-precomposed" href="Assets/Favicon.png">
-<link rel="shortcut icon" href="Assets/Favicon.png">
-<!-- デバイスサイズ640px以下 -->
-<link rel="stylesheet" type="text/css" media="only screen and (max-device-width:640px)" href="Assets/css/main_smartphone.css"/>
-<!-- デバイスサイズ641px以上 -->
-<link rel="stylesheet" type="text/css" media="screen and (min-device-width:641px)" href="Assets/css/main_PC.css" />
-<link rel="stylesheet" href="Assets/css/flickity.css" />
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<!--JS読み込み-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="Assets/js/flickity.pkgd.min.js"></script>
-<script type="text/javascript" src="Assets/js/jquery.bxslider.js"></script>
-<script type="text/javascript" src="Assets/js/smooth-scroll.js"></script>
-<script type="text/javascript" src="Assets/js/main.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8" />
+    <title>Engeek|Home</title>
+    <!--Fabicon-->
+    <link rel="apple-touch-icon-precomposed" href="Assets/Favicon.png">
+    <link rel="shortcut icon" href="Assets/Favicon.png">
+    <!-- デバイスサイズ640px以下 -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/main.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--JS読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Assets/js/main.js"></script>
 </head>
+
 <body>
-<header>
-  <span><img src="Assets/image/engeeklogo.jpg" /></span>
-  <span><a href="index.html">トップ</a></span>
-  <span><a href="products.html">製品</a></span>
-  <span><a href="support.html">サポート</a></span>
-  <span><a href="aboutus.html">会社概要</a></span>
-</header>
-<br /><br />
-<ul class="js-flickity">
- <li class="gallery-cell"><img src="Assets/css/Engeek.jpg"></li>
- <li class="gallery-cell"><img src="Assets/css/Engeek.jpg"></li>
- <li class="gallery-cell"><img src="Assets/css/Engeek.jpg"></li>
-</ul>
+    <header><img src="Assets/image/engeeklogo_opacity.png">
+        <button>≡</button>
+    </header>
+    <div class="Back">
+        <div class="Title">ENGEEK
+
+            <div class="Sub">最高のゲームを。最高のシステムを。10代が作るゲーム会社。</div>
+            <a href="#Introduce" class="Smooth"><button>詳しく見る</button></a>
+        </div>
+    </div>
+    <div class="StartContent">
+        <article class="Title" id="Introduce">会社紹介</article>
+
+        <article class="Content">
+            株式会社ENGEEKは「最高のゲームを、最高の技術で、ユーザーの皆様とともに」というモットーでゲームを作成している会社です。<br>開発者は全員学生で、それぞれの専門分野の他に様々な技術を持っております。<br>ユーザーの皆様に「楽しさ」をご提供するため、日々の技術開発だけでなく知識共有コンテンツの作成やユーザーの皆様とのコミュニケーションも大切に日々の業務を行なっております。<br>ENGEEKのEnは◯◯の状態にいる、Geekとはある一つの物事にこだわり通す人のことをさします。会社ロゴはそのこだわりを通じてIT技術、ヒトとヒトの楽しさを共有する技術を「芽吹かせる」をテーマに作られました。<br>まだまだ至らぬ点があるとは思いますが、会社の成長を温かく見守って頂けると幸いです。<br><br>
+            <table summary="会社案内表">
+                <tr>
+                    <th class="t_top">商号</th>
+                    <td class="t_top">株式会社 ENGEEK</td>
+                </tr>
+                <tr>
+                    <th>代表取締役社長</th>
+                    <td>福井航大</td>
+                </tr>
+                <tr>
+                    <th>取締役副社長</th>
+                    <td>佐藤由弥</td>
+                </tr>
+                <tr>
+                    <th>所在地</th>
+                    <td>神奈川県横浜市</td>
+                </tr>
+                <tr>
+                    <th>資本金</th>
+                    <td>4万円（2017年4月現在）</td>
+                </tr>
+            </table>
 
 
-<p>
-  株式会社ENGEEK公式ホームページへようこそ！
-</p>
-<footer>
-  <span id="LogoTitle">十代が作る，俺たちのゲーム会社。</span>
-  <span id="LogoTitle2">株式会社 ENGEEK<a href = "https://twitter.com/Engeekinc" id="Twitter" target = "_blank"><a href = "https://www.facebook.com/Engeek-Inc-1912179172401129/" id="Facebook" target = "_blank"></a><a id="Youtube"></a> </a></span>
-</footer>
+        </article>
+        <article class="Title">製品</article>
+
+        <article class="Content">史上初、将棋盤RPG、Genesis&nbsp;Recordのβ版リリースを開始しました。少しでも興味のある方、リリース前のゲームをプレイしてみたい方は製品ページよりβテストにご参加ください。<br><img src="Assets/image/AppIcon3.png" />
+            <div class="Caption">
+                Genesis Record<br>
+                <a href="GenesisRecord/index.html" target="_blank"> <button class="install">インストール</button></a>
+            </div>
+            <br>製品ページは<a class="Line" href="GenesisRecord/index.html" target="_blank">こちら</a></article>
+
+        <article class="Title">社員紹介</article>
+        <section class="card">
+            <img class="card-img" src="Assets/image/Members/Test.JPG" alt="">
+            <div class="card-content">
+                <h1 class="card-title">福井　航大</h1>
+                <p class="card-text">デザイナー・取締役社長</p>
+            </div>
+            <div class="card-link">
+                <a href="http://webcreatorbox.com/about">雇用し続ける</a>
+                <a href="http://webcreatorbox.com/">クビにする</a>
+            </div>
+        </section>
+        <article class="Content">
+            <br>
+        </article>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>
+            <div class="FooterTitle">株式会社ENGEEK</div>
+        </footer>
+    </div>
 </body>
+<script>
+    $(function() {
+        $("a.Smooth").click(function() {
+            $("html,body").animate({
+                scrollTop: $($(this).attr("href")).offset().top
+            }, 1000, "swing");
+            return false;
+        })
+    });
+</script>
 </html>
