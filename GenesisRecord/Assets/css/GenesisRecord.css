@@ -971,4 +971,24 @@ footer {
     padding-top: 1em;
     margin-bottom: -1.2em;
     padding-bottom: 0.6em;
+    font-family: "ヒラギノ角ゴ Pro W3", メイリオ, Osaka, Arial, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+footer h3 {}
+
+footer h3 img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2em;
+    height: auto;
+}
+
+.Center {
+    text-align: center;
+}
+
+img.Title {
+    position: relative;
+    width: 60vw;
+    height: auto;
 }
