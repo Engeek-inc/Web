@@ -43,6 +43,8 @@ header {
     top: 0px;
     text-align: center;
     border-bottom: 1px solid black;
+    -webkit-transition: all .3s;
+    transition: all .3s;
 }
 
 header img {

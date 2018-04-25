@@ -124,6 +124,9 @@
         })
     });
     var startPos;
+    $(function() {
+        $("header").css("top", "-" + 5 + "em");
+    });
     $(window).scroll(function() {
         // windowがスクロールされた時に実行する処理
         var currentPos = $(this).scrollTop();
@@ -136,7 +139,6 @@
         }
         startPos = currentPos;
     });
-
 </script>
 
 </html>
