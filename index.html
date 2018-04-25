@@ -123,7 +123,19 @@
             return false;
         })
     });
-
+    $(window).scroll(function() {
+        var startPos;
+        // windowがスクロールされた時に実行する処理
+        var currentPos = $(this).scrollTop();
+        if (currentPos > startPos) {
+            if ($(window).scrollTop() >= 200) {
+                $("header").css("top", "-" + menuHeight + "px");
+            }
+        } else {
+            $("header").css("top", 0 + "px");
+        }
+        startPos = currentPos;
+    });
 </script>
 
 </html>

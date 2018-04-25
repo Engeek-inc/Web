@@ -162,6 +162,8 @@ header button:hover {
     right: 0px;
     top: 0px;
     bottom: 0px;
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
 .Back .Title {
