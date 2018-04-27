@@ -7,6 +7,7 @@
     <!--Fabicon-->
     <link rel="apple-touch-icon-precomposed" href="Assets/Favicon.png">
     <link rel="shortcut icon" href="Assets/Favicon.png">
+    <link rel="stylesheet" type="text/css" href="Assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="Assets/css/MemberTweet.css" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!--JS読み込み-->
@@ -15,6 +16,40 @@
 </head>
 
 <body>
+    <header><a href="index.html"><img src="Assets/image/engeeklogo_opacity.png"></a>
+        <img src="Assets/image/SearchIcon.png" class="Search">
+        <img src="Assets/image/MenuIcon.png" class="Menu">
+        <input class="SearchInputField" />
+        <img src="Assets/image/Remove.png" / class="RemoveResult">
+    </header>
+    <script>
+        var toggle = false;
+        $("img.Search").click(function() {
+            if (!toggle) {
+                $("input.SearchInputField").css("display", "inline");
+                $("img.RemoveResult").css("display", "inline");
+                $(this).addClass("SearchChanged");
+                $(".Search").css("height", "30%");
+                $(".Search").css("top", "1.7em");
+                $(".Search").css("right", "2em");
+                toggle = true;
+            } else {
+                $("input.SearchInputField").css("display", "none");
+                $("img.RemoveResult").css("display", "none");
+                $(".Search").css("height", "40%");
+                $(".Search").css("top", "1.5em");
+                $(".Search").css("right", "1.4em");
+                if ($("img.Search").hasClass("SearchChanged"))
+                    $("img.Search").removeClass("SearchChanged");
+                toggle = false;
+            }
+        });
+        $(".RemoveResult").click(function() {
+            $("input.SearchInputField").val("");
+        });
+    </script>
+
+    <br><br><br>
     <article class="Title">社員のつぶやき</article>
     <article class="Content">Genesis Recordリリース目前、現在のENGEEK社の様子をお届けします。<br><br><br>
         <div class="Tweet"><span class="Title">福井</span>この一年間辛かったよね</div>

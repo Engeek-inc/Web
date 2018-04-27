@@ -17,7 +17,8 @@ body {
     right: 0px;
     top: 0px;
     bottom: 0px;
-    font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 500;
 }
 
 a.Line {
@@ -322,6 +323,7 @@ button.viewDetail {
     transition: all .3s;
     z-index: 100;
     top: 15vh;
+
 }
 
 button.viewDetail::after {
@@ -339,6 +341,7 @@ button.viewDetail::after {
 button.viewDetail:hover {
     background-color: rgba(255, 255, 255, .2);
     letter-spacing: .2em;
+    border-radius: 25px 25px 25px 25px;
 }
 
 .StartContent {
@@ -348,9 +351,9 @@ button.viewDetail:hover {
 
 article.Title {
     margin-top: 2em;
-    font-weight: 200;
+    font-weight: 350;
     padding-left: .6em;
-    letter-spacing: .3em;
+    letter-spacing: .2em;
     font-size: 2em;
     border-bottom: 1.2px solid black;
     border-left: 5px solid black;
@@ -360,10 +363,10 @@ article.Content {
     margin-top: 1em;
     margin-left: 1em;
     margin-right: 1em;
-    font-weight: 200;
+    font-weight: 250;
     letter-spacing: .1em;
     font-size: 1em;
-    line-height: 160%;
+    line-height: 180%;
 }
 
 article.Content img {

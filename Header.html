@@ -1,0 +1,33 @@
+<header><a href="index.html"><img src="Assets/image/engeeklogo_opacity.png"></a>
+    <img src="Assets/image/SearchIcon.png" class="Search">
+    <img src="Assets/image/MenuIcon.png" class="Menu">
+    <input class="SearchInputField" />
+    <img src="Assets/image/Remove.png" / class="RemoveResult">
+</header>
+<script>
+    var toggle = false;
+    $("img.Search").click(function() {
+        if (!toggle) {
+            $("input.SearchInputField").css("display", "inline");
+            $("img.RemoveResult").css("display", "inline");
+            $(this).addClass("SearchChanged");
+            $(".Search").css("height", "30%");
+            $(".Search").css("top", "1.7em");
+            $(".Search").css("right", "2em");
+            toggle = true;
+        } else {
+            $("input.SearchInputField").css("display", "none");
+            $("img.RemoveResult").css("display", "none");
+            $(".Search").css("height", "40%");
+            $(".Search").css("top", "1.5em");
+            $(".Search").css("right", "1.4em");
+            if ($("img.Search").hasClass("SearchChanged"))
+                $("img.Search").removeClass("SearchChanged");
+            toggle = false;
+        }
+    });
+    $(".RemoveResult").click(function() {
+        $("input.SearchInputField").val("");
+    });
+
+</script>
