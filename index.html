@@ -3,42 +3,65 @@
 
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8" />
-    <title>Engeek|Home</title>
+    <title>Engeekホームページ</title>
     <!--Fabicon-->
     <link rel="apple-touch-icon-precomposed" href="Assets/image/logo.png">
     <link rel="shortcut icon" href="Assets/image/logo.png">
     <!-- デバイスサイズ640px以下 -->
     <link rel="stylesheet" type="text/css" href="Assets/css/main.css" />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!--JS読み込み-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="Assets/js/main.js"></script>
 </head>
 
 <body>
-    <header><img src="Assets/image/engeeklogo_opacity.png">
-        <!--
-        <div id="nav-drawer">
-            <input id="nav-input" type="checkbox" class="nav-unshown">
-            <label id="nav-open" for="nav-input"><span>≡</span></label>
-            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-            <div id="nav-content">
-                <a href="index.html">Home</a>
-                <a href="characters.html">Characters</a>
-                <a href="https://form.run/@engeek" target="_blank">βテスト</a>
-            </div>
-        </div>-->
+    <header><a href="index.html"><img src="Assets/image/engeeklogo_opacity.png"></a>
+        <img src="Assets/image/SearchIcon.png" class="Search">
+        <img src="Assets/image/MenuIcon.png" class="Menu">
+        <input class="SearchInputField" />
+        <img src="Assets/image/Remove.png" / class="RemoveResult">
     </header>
+    <script>
+        var toggle = false;
+        $("img.Search").click(function() {
+            if (!toggle) {
+                $("input.SearchInputField").css("display", "inline");
+                $("img.RemoveResult").css("display", "inline");
+                $(this).addClass("SearchChanged");
+                $(".Search").css("height", "30%");
+                $(".Search").css("top", "1.7em");
+                $(".Search").css("right", "2em");
+                toggle = true;
+            } else {
+                $("input.SearchInputField").css("display", "none");
+                $("img.RemoveResult").css("display", "none");
+                $(".Search").css("height", "40%");
+                $(".Search").css("top", "1.5em");
+                $(".Search").css("right", "1.4em");
+                if ($("img.Search").hasClass("SearchChanged"))
+                    $("img.Search").removeClass("SearchChanged");
+                toggle = false;
+            }
+        });
+        $(".RemoveResult").click(function() {
+            $("input.SearchInputField").val("");
+        });
+    </script>
     <div class="Back">
         <div class="Title">ENGEEK
 
+        </div>
+        <div class="Center">
             <div class="Sub">最高のゲームを。最高のシステムを。10代が作るゲーム会社。</div>
-            <a href="#Introduce" class="Smooth"><button>詳しく見る</button></a>
+            <a href="#NewInfo" class="Smooth viewDetail"><button class="viewDetail">詳しく見る</button></a>
         </div>
     </div>
     <div class="StartContent">
         <article class="Title" id="NewInfo">新着情報</article>
-
+        <article class="Content">
+            Genesis Refcordのβリリースを開始しました。<br> βリリースについてのページは<a class="Line">こちら</a>
+        </article>
         <article class="Title" id="Introduce">会社紹介</article>
 
         <article class="Content">
@@ -113,6 +136,7 @@
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <footer>
             <div class="FooterTitle"><img src="Assets/image/logo.png">株式会社ENGEEK</div>
+            <i class="ico Twi">a</i>
         </footer>
     </div>
 </body>
@@ -128,12 +152,13 @@
     var startPos;
     $(function() {
         $("header").css("top", "-" + 5 + "em");
+        startPos = 0;
     });
     $(window).scroll(function() {
         // windowがスクロールされた時に実行する処理
         var currentPos = $(this).scrollTop();
         if (currentPos > startPos) {
-            if ($(window).scrollTop() >= 200) {
+            if ($(window).scrollTop() >= 100) {
                 $("header").css("top", "-" + 5 + "em");
             }
         } else {
