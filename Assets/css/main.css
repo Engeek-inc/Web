@@ -308,7 +308,7 @@ div.Center {
 button.viewDetail {
     position: relative;
     letter-spacing: .04em;
-    font-size: .2em;
+    font-size: 1em;
     display: inline-block;
     width: 200px;
     height: 54px;
