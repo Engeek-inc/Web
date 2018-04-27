@@ -392,16 +392,27 @@ footer {
 }
 
 footer .FooterTitle {
+    position: absolute;
     vertical-align: middle;
     padding-top: 1em;
-    padding-left: 1em;
+    padding-left: 3em;
     font-size: 1.5em;
+    bottom: 1.5em;
 }
 
 footer .FooterTitle::after {
     content: "十代が作る、俺たちのゲーム会社。";
     font-size: 0.3em;
     position: absolute;
-    left: 2.5em;
-    bottom: 1.5em;
+    left: 7em;
+    bottom: -2em;
+}
+
+footer .FooterTitle img {
+    position: absolute;
+    width: 2em;
+    bottom: 0px;
+    left: 0em;
+    margin-left: .5em;
+    margin-bottom: -.2em;
 }
