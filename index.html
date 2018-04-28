@@ -3,6 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8" />
+    <meta name=”description” content="株式会社ENGEEKのホームページへようこそ。Genesis Recordついての" />
     <title>Engeekホームページ</title>
     <!--Fabicon-->
     <link rel="apple-touch-icon-precomposed" href="Assets/image/logo.png">
@@ -47,7 +48,6 @@
         $(".RemoveResult").click(function() {
             $("input.SearchInputField").val("");
         });
-
     </script>
 
     <div class="Back">
@@ -62,13 +62,34 @@
     <div class="StartContent">
         <article class="Title" id="NewInfo">新着情報</article>
         <article class="Content">
-            Genesis Recordのβリリースを開始しました。<br> βリリースについてのページは<a class="Line">こちら</a>
+            Genesis Recordのβリリースを開始しました。<br> βリリースについてのページは<a href="betaTest.html" class="Line">こちら</a>
+
+            <br><br><br>
+            <div class="Center Bold" style="font-size: 2em">Subscribe Me!</div><br>
+            <div class="Icons">
+                <a href="https://twitter.com/Engeekinc" target="_blank">
+            <img src="Assets/image/Twitter.png" class="TwitterIcon"></a>
+
+                <a href="https://www.youtube.com/channel/UCtASwZj_ATw8qPh2cod3L-Q/featured?view_as=subscriber" target="_blank">
+            <img src="Assets/image/Youtube.png" class="YoutubeIcon"></a>
+                <a href="mailto:engeek.inc@gmail.com?subject=お問い合わせ&amp;body=ご記入ください"><img class="MailIcon" src="Assets/image/mail.png"></a>
+            </div>
+            <br>こちらのメディアサービスから定期的にお知らせを致します。
         </article>
+        <article class="Title">製品</article>
+
+        <article class="Content">史上初、将棋盤RPG、Genesis&nbsp;Recordのβ版リリースを開始しました。少しでも興味のある方、リリース前のゲームをプレイしてみたい方は製品ページよりβテストにご参加ください。<br><img src="Assets/image/AppIcon3.png" />
+            <div class="Caption">
+                Genesis Record (beta)<br>
+                <a href="betaTest.html" target="_blank"> <button class="install">βインストール</button></a>
+            </div>
+            <br>製品ページは<a class="Line" href="GenesisRecord/index.html" target="_blank">こちら</a></article>
+
         <article class="Title" id="Introduce">会社紹介</article>
 
         <article class="Content">
             株式会社ENGEEKは「最高のゲームを、最高の技術で、ユーザーの皆様とともに」というモットーでゲームを作成している会社です。<br>開発者は全員学生で、それぞれの専門分野の他に様々な技術を持っております。<br>ユーザーの皆様に「楽しさ」をご提供するため、日々の技術開発だけでなく知識共有コンテンツの作成やユーザーの皆様とのコミュニケーションも大切に日々の業務を行なっております。<br>ENGEEKのEnは◯◯の状態にいる、Geekとはある一つの物事にこだわり通す人のことをさします。会社ロゴはそのこだわりを通じてIT技術、ヒトとヒトの楽しさを共有する技術を「芽吹かせる」をテーマに作られました。<br>まだまだ至らぬ点があるとは思いますが、会社の成長を温かく見守って頂けると幸いです。<br><br>
-            <table summary="会社案内表">
+            <table class="Table" summary="会社案内表">
                 <tr>
                     <th class="t_top">商号</th>
                     <td class="t_top">株式会社 ENGEEK</td>
@@ -90,30 +111,20 @@
                     <td>4万円（2017年4月現在）</td>
                 </tr>
             </table>
-
-
         </article>
-        <article class="Title">製品</article>
-
-        <article class="Content">史上初、将棋盤RPG、Genesis&nbsp;Recordのβ版リリースを開始しました。少しでも興味のある方、リリース前のゲームをプレイしてみたい方は製品ページよりβテストにご参加ください。<br><img src="Assets/image/AppIcon3.png" />
-            <div class="Caption">
-                Genesis Record<br>
-                <a href="GenesisRecord/index.html" target="_blank"> <button class="install">インストール</button></a>
-            </div>
-            <br>製品ページは<a class="Line" href="GenesisRecord/index.html" target="_blank">こちら</a></article>
 
         <article class="Title">社員紹介</article>
-        <table>
+        <table class="CardTable">
             <td>
                 <section class="card">
                     <img class="card-img" src="Assets/image/Members/Test.JPG" alt="">
                     <div class="card-content">
                         <h1 class="card-title">福井　航大</h1>
                         <p class="card-text">代表取締役CEO（デザイナー・プログラマ）</p>
+                        Genesis RecordのUIや3Dモデルを担当。オープニングムービーなどの作成など映像部門も手がける。UI/UXデザインや簡単なプログラム、3Dデザインのことやマーケティングのことについて主に担当をする。
                     </div>
                     <div class="card-link">
-                        <a href="">社員ブログ</a>
-                        <a href="">ひとこと</a>
+                        <a href="https://twitter.com/kota_engeek" target="_blank">Twitter</a>
                     </div>
                 </section>
             </td>
@@ -122,52 +133,80 @@
                     <img class="card-img" src="" alt="">
                     <div class="card-content">
                         <h1 class="card-title">佐藤　由弥</h1>
-                        <p class="card-text">取締役COO・CTO（プログラマ・デザイナー）</p>
+                        <p class="card-text">取締役COO・CIO（プログラマ・デザイナー・）</p>
+                        Genesis Recordのプログラムやゲームストーリー、敵陣営キャラクターを作成。フロントサイドではこのWebページやプロダクトページの作成を担当。技術系のことやシナリオライティング、世界観界デザインのことやマーケティングのことについて主に担当をする。
                     </div>
                     <div class="card-link">
-                        <a href="">社員ブログ</a>
-                        <a href="">ひとこと</a>
+                        <a href="">Twitter</a>
+                    </div>
+                </section>
+            </td>
+            <br>
+
+            <td>
+                <section class="card">
+                    <img class="card-img" src="" alt="">
+                    <div class="card-content">
+                        <h1 class="card-title">橋本　圭人</h1>
+                        <p class="card-text">CTO（ゲームプランナー・コンテンツクリエーター）</p>
+                        Genesis Recordのプロジェクトマネージメントやコンテンツ統合などを担当。世界観デザインにも精通している。
+                    </div>
+                    <div class="card-link">
+                        <a href="">Twitter</a>
                     </div>
                 </section>
             </td>
         </table>
         <article class="Content">
             <br>
-        </article>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </article><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <footer>
             <div class="FooterTitle"><img src="Assets/image/logo.png">株式会社ENGEEK</div>
         </footer>
+        <div class="SiteMap">サイトマップ<br>
+            <a href="index.html" style="color: white">
+                <div class="Box">ホーム</div>
+            </a>
+            <a href="betaTest.html" style="color: white">
+                <div class="Box">βテスト</div>
+            </a>
+            <a href="GenesisRecord/index.html" style="color: white">
+                <div class="Box">ゲームページ</div>
+            </a>
+            <a style="color: white">
+                <div class="Box">社員ブログ</div>
+            </a>
+        </div>
+        <article class="Copy">&copy;2018 ENGEEK All rights reserved.&nbsp;Created by Yuya Sato.</article>
     </div>
-</body>
-<script>
-    $(function() {
-        $("a.Smooth").click(function() {
-            $("html,body").animate({
-                scrollTop: $($(this).attr("href")).offset().top
-            }, 1000, "swing");
-            return false;
-        })
-    });
-    var startPos;
-    $(function() {
-        $("header").css("top", "-" + 5 + "em");
-        startPos = 0;
-    });
-    $(window).scroll(function() {
-        // windowがスクロールされた時に実行する処理
-        var currentPos = $(this).scrollTop();
-        if (currentPos > startPos) {
-            if ($(window).scrollTop() >= 100) {
-                $("header").css("top", "-" + 5 + "em");
+    <script>
+        $(function() {
+            $("a.Smooth").click(function() {
+                $("html,body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top
+                }, 1000, "swing");
+                return false;
+            })
+        });
+        var startPos;
+        $(function() {
+            $("header").css("top", "-" + 5 + "em");
+            startPos = 0;
+        });
+        $(window).scroll(function() {
+            // windowがスクロールされた時に実行する処理
+            var currentPos = $(this).scrollTop();
+            if (currentPos > startPos) {
+                if ($(window).scrollTop() >= 100) {
+                    $("header").css("top", "-" + 5 + "em");
+                }
+            } else {
+                $("header").css("top", 0 + "px");
             }
-        } else {
-            $("header").css("top", 0 + "px");
-        }
-        startPos = currentPos;
-    });
+            startPos = currentPos;
+        });
+    </script>
+</body>
 
-</script>
 
 </html>

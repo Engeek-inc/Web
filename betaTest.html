@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8" />
+    <title>βテスタ用ページ</title>
+    <!--Fabicon-->
+    <link rel="apple-touch-icon-precomposed" href="Assets/image/logo.png">
+    <link rel="shortcut icon" href="Assets/image/logo.png">
+    <!-- デバイスサイズ640px以下 -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/main.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!--JS読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Assets/js/main.js"></script>
+</head>
+
+<body>
+    <header><a href="index.html"><img src="Assets/image/engeeklogo_opacity.png"></a>
+        <img src="Assets/image/SearchIcon.png" class="Search">
+        <img src="Assets/image/MenuIcon.png" class="Menu">
+        <input class="SearchInputField" />
+        <img src="Assets/image/Remove.png" class="RemoveResult">
+    </header>
+    <script>
+        var toggle = false;
+        $("img.Search").click(function() {
+            if (!toggle) {
+                $("input.SearchInputField").css("display", "inline");
+                $("img.RemoveResult").css("display", "inline");
+                $(this).addClass("SearchChanged");
+                $(".Search").css("height", "30%");
+                $(".Search").css("top", "1.7em");
+                $(".Search").css("right", "2em");
+                toggle = true;
+            } else {
+                $("input.SearchInputField").css("display", "none");
+                $("img.RemoveResult").css("display", "none");
+                $(".Search").css("height", "40%");
+                $(".Search").css("top", "1.5em");
+                $(".Search").css("right", "1.4em");
+                if ($("img.Search").hasClass("SearchChanged"))
+                    $("img.Search").removeClass("SearchChanged");
+                toggle = false;
+            }
+        });
+        $(".RemoveResult").click(function() {
+            $("input.SearchInputField").val("");
+        });
+
+    </script>
+    <br><br><br><br>
+    <h1 class="Center">βテスト（iOS）は2018年04月29日から開始になります</h1>
+    <br>
+
+    <article class="Title">βテスト方法</article>
+    <article class="Content">
+        βテスタ登録をしていただき、ありがとうございます。<br>まだβテスト登録がお済みでない方は<a class="Line" href="https://form.run/@engeek" target="_blank">こちら</a>から登録をお願いいたします。<br>登録が完了した方は以下の手順でインストールを行ってください。<br>※<sub>1</sub>&nbsp;4/29（日）のβテスト配信開始と同時にβテスタの皆様へ招待メールをお送りいたします。そのリンクをクリックしていただくことでも以下の操作は可能です。
+        <br>※<sub>2</sub>&nbsp;TestFlightアプリはiOS8以上にしか入りません。iOS7以下はAdHocでのテストになるため、テスター対象外とさせていただいております。
+        <br>※<sub>3</sub>&nbsp;βテスタの方が1000人を超えた時点でβテストを一時打ち切りにさせていただきますので、お早めの登録をお願いいたします。
+        <br>※<sub>4</sub>&nbsp;iOS版でのβテストを開始した後、Androidでのβテストも開始致します。その時はまたこのページにてお知らせしますので、Androidユーザーの方はよろしくお願いいたします。
+        <h3>①Test Flightをインストールする</h3>
+        Test Flight（iPhoneのみでインストール可能）を以下のダウンロードリンクからダウンロードします<br>
+        <a href="https://itunes.apple.com/jp/app/testflight/id899247664?mt=8" target="_blank">
+        <img src="Assets/image/TestFlight.png" style="max-width: 10em"></a>
+
+        <h3>②招待メールを確認する</h3>
+        4/27（日）午前9時頃にβテストの登録をされた方に向けて招待メールを送付いたします。メールに記載されているリンクをタップしていただくとアプリのインストールが可能になります。
+
+        <h3>③アプリケーションをインストール</h3>
+        Test FlightでGenesis Recordがインストールできる状態になっていることを確認します。もしもインストールできない場合や不都合が生じた場合は以下のメールフォームからお問い合わせください。
+        <h3>④βテスト開始！</h3>
+        これでベータ版のテストが開始できます。Genesis Recordは開発中のゲームですので、まだまだ至らぬところがあると思いますが、ぜひ皆さまのお力をお貸しください。<br>定期的に以下のSNSなどで情報を発信していきます。
+        <div class="Icons">
+            <a href="https://twitter.com/Engeekinc" target="_blank">
+            <img src="Assets/image/Twitter.png" class="TwitterIcon"></a>
+
+            <a href="https://www.youtube.com/channel/UCtASwZj_ATw8qPh2cod3L-Q/featured?view_as=subscriber" target="_blank">
+            <img src="Assets/image/Youtube.png" class="YoutubeIcon"></a>
+            <a href="mailto:engeek.inc@gmail.com?subject=お問い合わせ&amp;body=ご記入ください"><img class="MailIcon" src = "Assets/image/mail.png"></a>
+        </div>
+        <br>※&nbsp;メーラーが起動しない場合はこちらのメールアドレスをコピーし、送信してください。お手数をおかけし、申し訳ありません。<br>
+        <b>engeek.inc@gmail.com</b>
+
+        <br><br>
+    </article>
+
+
+    <footer>
+        <div class="FooterTitle"><img src="Assets/image/logo.png">株式会社ENGEEK</div>
+    </footer>
+
+    <div class="SiteMap">サイトマップ<br>
+        <a href="index.html" style="color: white">
+            <div class="Box">ホーム</div>
+        </a>
+        <a href="betaTest.html" style="color: white">
+            <div class="Box">βテスト</div>
+        </a>
+        <a href="GenesisRecord/index.html" style="color: white">
+            <div class="Box">ゲームページ</div>
+        </a>
+        <a style="color: white">
+            <div class="Box">社員ブログ</div>
+        </a>
+    </div>
+    <article class="Copy">&copy;2018 ENGEEK All rights reserved.&nbsp;Created by Yuya Sato.</article>
+    <script>
+        $(function() {
+            $("a.Smooth").click(function() {
+                $("html,body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top
+                }, 1000, "swing");
+                return false;
+            })
+        });
+        var startPos;
+        $(function() {
+            $("header").css("top", "-" + 5 + "em");
+            startPos = 0;
+        });
+        $(window).scroll(function() {
+            // windowがスクロールされた時に実行する処理
+            var currentPos = $(this).scrollTop();
+            if (currentPos > startPos) {
+                if ($(window).scrollTop() >= 100) {
+                    $("header").css("top", "-" + 5 + "em");
+                }
+            } else {
+                $("header").css("top", 0 + "px");
+            }
+            startPos = currentPos;
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

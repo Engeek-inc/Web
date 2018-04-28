@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 html {
-    margin: 0px, 0px, 0px, 0px;
-    padding: 0, 0, 0, 0;
+    margin: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -11,8 +11,8 @@ html {
 }
 
 body {
-    margin: 0px, 0px, 0px, 0px;
-    padding: 0, 0, 0, 0;
+    margin: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -31,10 +31,19 @@ a.Line {
 
 a {
     transition: all .3s;
+    text-decoration: none;
 }
 
 a:hover {
     opacity: .5;
+}
+
+.Center {
+    text-align: center;
+}
+
+.Bold {
+    font-weight: 400;
 }
 
 header {
@@ -357,16 +366,39 @@ article.Title {
     font-size: 2em;
     border-bottom: 1.2px solid black;
     border-left: 5px solid black;
+    margin-left: .5em;
 }
 
 article.Content {
     margin-top: 1em;
-    margin-left: 1em;
+    margin-left: 1.5em;
     margin-right: 1em;
     font-weight: 250;
     letter-spacing: .1em;
     font-size: 1em;
     line-height: 180%;
+}
+
+
+h1 {
+    font-weight: 350;
+    letter-spacing: .2em;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 350;
+    letter-spacing: .2em;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 350;
+    letter-spacing: .2em;
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
 article.Content img {
@@ -401,7 +433,32 @@ article.Content .Caption {
     padding-left: 1em;
 }
 
-table {
+div.Icons {
+    text-align: center;
+}
+
+img.TwitterIcon {
+    width: 40vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    max-width: 8em;
+}
+
+img.YoutubeIcon {
+    width: 40vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    max-width: 8em;
+}
+
+img.MailIcon {
+    width: 40vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    max-width: 8em;
+}
+
+table.Table {
     border-collapse: collapse;
     width: 100%;
 }
@@ -411,40 +468,46 @@ th.t_top {
     width: 180;
 }
 
-table th {
+table.Table th {
     border-bottom: #e3e3e3 1px dotted;
     text-align: left;
     padding: 10px;
     font-weight: normal;
 }
 
-table td.t_top {
+table.Table td.t_top {
     border-top: #b3b3b3 4px solid;
 }
 
-table td {
+table.Table td {
     border-bottom: #e3e3e3 1px dotted;
     text-align: left;
     padding: 10px;
 }
 
-table tr:hover {
+table.Table tr:hover {
     border-bottom: 1px solid black;
 }
 
+table.CardTable {
+    float: left;
+    text-align: center;
+}
+
 .cards {
-    position: absolute;
+    position: relative;
 }
 
 .card {
     margin: 30px auto;
     max-width: 20em;
-    flex-direction: row;
+    flex-direction: row-reverse;
     /*横並び・左から右（デフォルト）*/
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px #ccc;
     position: relative;
+    float: left;
 }
 
 .card-img {
@@ -488,12 +551,11 @@ table tr:hover {
 
 footer {
     display: block;
+    position: relative;
     background-color: #142955;
-    width: 100vw;
     height: 6em;
     margin: 0px, 0px, 0px, 0px;
     padding: 0px, 0px, 0px, 0px;
-    margin-left: -.5em;
     color: white;
     font-weight: 200;
     letter-spacing: .1em;
@@ -536,4 +598,38 @@ i.Twitter {
 
 .Twi:before {
     content: "\f081";
+}
+
+.SiteMap {
+    background-color: #142955;
+    margin: 0px 0px 0px 0px;
+    padding-left: 1em;
+    padding-top: 1em;
+    color: white;
+    word-wrap: break-word;
+    padding-bottom: 2em;
+}
+
+.SiteMap .Box {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    display: inline;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    letter-spacing: .1em;
+    line-height: 220%;
+}
+
+article.Copy {
+    background-color: #142955;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    width: 100vw;
+    color: white;
+    font-weight: 200;
+    font-family: "Noto Sans", "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    padding-bottom: 2em;
 }
