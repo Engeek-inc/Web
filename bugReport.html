@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8"/>
+<title>バグ一覧・仕様一覧(Genesis Record)</title>
+<!--Fabicon-->
+<link rel="apple-touch-icon-precomposed" href="Assets/Favicon.png">
+<link rel="shortcut icon" href="Assets/Favicon.png">
+<!--cssの読み込み-->
+<link rel="stylesheet" href="Assets/css/main.css" type="text/css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--JS読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="Assets/js/main.js"></script>
+</head>
+<body>
+      <header><a href="index.html"><img src="Assets/image/engeeklogo_opacity.png"></a>
+        <img src="Assets/image/SearchIcon.png" class="Search">
+        <input class="SearchInputField" />
+        <img src="Assets/image/Remove.png" class="RemoveResult">
+    </header>
+    <script>
+        var toggle = false;
+        $("img.Search").click(function() {
+            if (!toggle) {
+                $("input.SearchInputField").css("display", "inline");
+                $("img.RemoveResult").css("display", "inline");
+                $(this).addClass("SearchChanged");
+                $(".Search").css("height", "30%");
+                $(".Search").css("top", "1.7em");
+                $(".Search").css("right", "2em");
+                toggle = true;
+            } else {
+                $("input.SearchInputField").css("display", "none");
+                $("img.RemoveResult").css("display", "none");
+                $(".Search").css("height", "40%");
+                $(".Search").css("top", "1.5em");
+                $(".Search").css("right", "1.4em");
+                if ($("img.Search").hasClass("SearchChanged"))
+                    $("img.Search").removeClass("SearchChanged");
+                toggle = false;
+            }
+        });
+        $(".RemoveResult").click(function() {
+            $("input.SearchInputField").val("");
+        });
+$(function() {
+            $("a.Smooth").click(function() {
+                $("html,body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top
+                }, 1000, "swing");
+                return false;
+            })
+        });
+        var startPos;
+        $(function() {
+            $("header").css("top", "-" + 5 + "em");
+            startPos = 0;
+        });
+        $(window).scroll(function() {
+            // windowがスクロールされた時に実行する処理
+            var currentPos = $(this).scrollTop();
+            if (currentPos > startPos) {
+                if ($(window).scrollTop() >= 100) {
+                    $("header").css("top", "-" + 5 + "em");
+                }
+            } else {
+                $("header").css("top", 0 + "px");
+            }
+            startPos = currentPos;
+        });
+
+    </script>
+
+
+    <br><br><br>
+    <h2 class="Center">バグ報告や実装についてのご意見がある方は<a class="Line">こちら</a>からお願いいたします。<br>ご協力お願いいたします。</h2>
+    <br><br>
+    <article class="Title">
+        バグ一覧
+    </article>
+    <article class="Content">
+        ここには現在Genesis Recordにおいて確認されているバグを記載しております。<br>正式ローンチまでには全て修正いたします。<br>βテスターの皆さま、ご協力ありがとうございます。
+        <br><br>
+        <table class="Table">
+                <tr>
+                    <th class="t_top">バグ内容</th>
+                    <th class="t_top">確認されたバージョン</th>
+                    <th class="t_top">解決済みか</th>
+                </tr>
+                <tr>
+                    <td class="Center">コインの回収ができない</td>
+                    <td class="Center">0.1(beta)</td>
+                    <td class="Center">◯</td>
+                </tr>
+                <tr>
+                    <td class="Center">説明文が不十分</td>
+                    <td class="Center">0.1(beta)</td>
+                    <td class="Center">×</td>
+                </tr>
+                <tr>
+                    <td class="Center">ダンジョンにおいて特定のキャラクターのアニメーションがおかしい</td>
+                    <td class="Center">0.1(beta)</td>
+                    <td class="Center">◯</td>
+                </tr>
+        </table>
+    </article>
+</body>
+</html>
