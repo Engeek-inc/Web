@@ -46,6 +46,9 @@ a:hover {
     font-weight: 400;
 }
 
+.Underline{
+    border-bottom: 1px solid black;
+}
 header {
     width: 100vw;
     height: 5em;
@@ -385,6 +388,8 @@ h1 {
     letter-spacing: .2em;
     font-size: 3em;
     font-weight: 400;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 h2 {
@@ -393,6 +398,7 @@ h2 {
     font-size: 2em;
     font-weight: 400;
     margin-left: 1em;
+    margin-right: 1em;
 }
 
 h3 {
@@ -400,6 +406,8 @@ h3 {
     letter-spacing: .2em;
     font-size: 1.5em;
     font-weight: 400;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 article.Content img {
@@ -486,68 +494,9 @@ table.Table td {
     padding: 10px;
 }
 
-table.Table tr:hover {
-    border-bottom: 1px solid black;
-}
-
-table.CardTable {
-    float: left;
-    text-align: center;
-}
-
-.cards {
-    position: relative;
-}
-
-.card {
-    margin: 30px auto;
-    max-width: 20em;
-    flex-direction: row-reverse;
-    /*横並び・左から右（デフォルト）*/
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px #ccc;
-    position: relative;
-    float: left;
-}
-
-.card-img {
-    border-radius: 5px 5px 0 0;
-    max-width: 100%;
-    height: auto;
-}
-
-.card-content {
-    padding: 20px;
-}
-
-.card-title {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-}
-
-.card-text {
-    color: #777;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-.card-link {
-    text-align: center;
-    border-top: 1px solid #eee;
-    padding: 20px;
-}
-
-.card-link a {
-    text-decoration: none;
-    color: #0bd;
-    margin: 0 10px;
-}
-
-.card-link a:hover {
-    color: #0090aa;
+table.Table tr.HoverAnimation:hover {
+    background-color: #3F9BDB;
+    color: white;
 }
 
 footer {
@@ -628,9 +577,11 @@ article.Copy {
     background-color: #142955;
     text-align: center;
     margin: 0px 0px 0px 0px;
-    width: 100vw;
+    width: 90vw;
     color: white;
     font-weight: 200;
     font-family: "Noto Sans", "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     padding-bottom: 2em;
+     padding-left: 5vw;
+    padding-right: 5vw;
 }
