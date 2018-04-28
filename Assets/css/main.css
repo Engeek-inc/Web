@@ -46,9 +46,10 @@ a:hover {
     font-weight: 400;
 }
 
-.Underline{
+.Underline {
     border-bottom: 1px solid black;
 }
+
 header {
     width: 100vw;
     height: 5em;
@@ -499,7 +500,7 @@ table.Table tr.HoverAnimation:hover {
     color: white;
 }
 
-div.Members{
+div.Members {
     margin-top: 2em;
     margin-left: 1em;
     margin-right: 1em;
@@ -507,7 +508,8 @@ div.Members{
     flex-wrap: wrap;
     display: flex;
 }
-div.Members div.Box{
+
+div.Members div.Box {
     width: 50vh;
     height: 50vh;
     justify-content: flex-start;
@@ -515,20 +517,42 @@ div.Members div.Box{
     flex-wrap: nowrap;
     display: inline-flex;
 }
-div.Members div.Box img{
+
+div.Members div.Box img {
     border-radius: 10em 10em 10em 10em;
     height: 30%;
     width: 30%;
     margin-right: 1em;
 }
-div.Members div.Box span.Title{
+
+div.Members div.Box span.Title {
     padding-left: 1em;
     display: contents;
 }
-div.Members div.Box span.Content{
+
+div.Members div.Box span.Content {
     font-weight: 300;
     display: contents;
 }
+
+#acMenu dt {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    border: #666 1px solid;
+    cursor: pointer;
+    border-top: black 4px solid;
+    width: 100%;
+}
+
+#acMenu dd {
+    display: none;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    left: 0px;
+}
+
 footer {
     display: block;
     position: relative;
@@ -612,6 +636,6 @@ article.Copy {
     font-weight: 200;
     font-family: "Noto Sans", "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     padding-bottom: 2em;
-     padding-left: 5vw;
+    padding-left: 5vw;
     padding-right: 5vw;
 }

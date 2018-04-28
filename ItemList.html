@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8" />
+    <title>バグ一覧・仕様一覧(Genesis Record)</title>
+    <!--Fabicon-->
+    <link rel="apple-touch-icon-precomposed" href="Assets/image/logo.png">
+    <link rel="shortcut icon" href="Assets/image/logo.png">
+    <!--cssの読み込み-->
+    <link rel="stylesheet" href="Assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--JS読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Assets/js/main.js"></script>
+</head>
+
+<body>
+    <header><a href="index.html"><img src="Assets/image/engeeklogo_opacity.png"></a>
+        <img src="Assets/image/SearchIcon.png" class="Search">
+        <input class="SearchInputField" />
+        <img src="Assets/image/Remove.png" class="RemoveResult">
+    </header>
+    <script>
+        var toggle = false;
+        $("img.Search").click(function() {
+            if (!toggle) {
+                $("input.SearchInputField").css("display", "inline");
+                $("img.RemoveResult").css("display", "inline");
+                $(this).addClass("SearchChanged");
+                $(".Search").css("height", "30%");
+                $(".Search").css("top", "1.7em");
+                $(".Search").css("right", "2em");
+                toggle = true;
+            } else {
+                $("input.SearchInputField").css("display", "none");
+                $("img.RemoveResult").css("display", "none");
+                $(".Search").css("height", "40%");
+                $(".Search").css("top", "1.5em");
+                $(".Search").css("right", "1.4em");
+                if ($("img.Search").hasClass("SearchChanged"))
+                    $("img.Search").removeClass("SearchChanged");
+                toggle = false;
+            }
+        });
+        $(".RemoveResult").click(function() {
+            $("input.SearchInputField").val("");
+        });
+        $(function() {
+            var status = false;
+            var str = $("#acMenu dt").contents;
+            $("#acMenu dt").on("click", function() {
+                var bo = $(this).next().slideToggle(200);
+                if (bo) {
+                    status = false;
+                    $(this).css(
+                        "border-top", "black 4px solid");
+                } else {
+                    status = true;
+                    $(this).css(
+                        "border-top", "#be1309 4px solid");
+                }
+                if (bo)
+                    $(this).text = "ー" + str;
+                else
+                    $(this).text = "＋" + str;
+            });
+        });
+    </script>
+
+    <br><br>
+    <article class="Title">
+        アイテム一覧
+    </article>
+    <article class="Content">
+        現状実装されているアイテム、これから実装する予定のアイテムを載せていきます。
+        <br>アイテムの案がある方は是非<a href="https://docs.google.com/forms/d/e/1FAIpQLScP272QHVC9yS2o114Q9_C7BOe5JkZgTw0iJJS3vQt196_JqQ/viewform?usp=sf_link" class="Line" target="_blank">こちら</a>から意見をお寄せください。皆さまのご意見によりこのゲームを良くすることができます。投稿して頂いた方、本当にありがとうございます！
+        <br>凡例：<br>◯…すでに実装済み<br>△…実装準備完了<br>×…今後実装予定
+        <br><br>
+        <dl id="acMenu">
+            <dt>回復アイテム</dt>
+            <dd>
+                <table class="Table">
+                    <tr>
+                        <th class="t_top Underline">アイテム名</th>
+                        <th class="t_top Underline">効能</th>
+                        <th class="t_top Underline">実装状態</th>
+                    </tr>
+                    <tr class="HoverAnimation">
+                        <td class="Center">赤のポーション</td>
+                        <td class="Center">HPを最大HPの10%回復する</td>
+                        <td class="Center">△</td>
+                    </tr>
+                    <tr class="HoverAnimation">
+                        <td class="Center">青のポーション</td>
+                        <td class="Center">HPを最大HPの30%回復する</td>
+                        <td class="Center">◯</td>
+                    </tr>
+                    <tr class="HoverAnimation">
+                        <td class="Center">緑のポーション</td>
+                        <td class="Center">HPを最大HPの40%回復する</td>
+                        <td class="Center">△</td>
+                    </tr>
+                    <tr class="HoverAnimation">
+                        <td class="Center">黄のポーション</td>
+                        <td class="Center">HPを最大HPの50%回復する</td>
+                        <td class="Center">△</td>
+                    </tr>
+                </table>
+            </dd>
+        </dl>
+        <dl id="acMenu">
+            <dt>攻撃アイテム</dt>
+            <dd>
+                <table class="Table">
+                    <tr>
+                        <th class="t_top Underline">アイテム名</th>
+                        <th class="t_top Underline">効能</th>
+                        <th class="t_top Underline">実装状態</th>
+                    </tr>
+                    <tr class="HoverAnimation">
+                        <td class="Center">赤のポーション</td>
+                        <td class="Center">HPを最大HPの10%回復する</td>
+                        <td class="Center">△</td>
+                    </tr>
+                    <tr class="HoverAnimation">
+                        <td class="Center">青のポーション</td>
+                        <td class="Center">HPを最大HPの30%回復する</td>
+                        <td class="Center">◯</td>
+                    </tr>
+                    <tr class="HoverAnimation">
+                        <td class="Center">緑のポーション</td>
+                        <td class="Center">HPを最大HPの40%回復する</td>
+                        <td class="Center">△</td>
+                    </tr>
+                    <tr class="HoverAnimation">
+                        <td class="Center">黄のポーション</td>
+                        <td class="Center">HPを最大HPの50%回復する</td>
+                        <td class="Center">△</td>
+                    </tr>
+                </table>
+            </dd>
+        </dl>
+    </article>
+    <br><br><br><br><br>
+    <footer>
+        <div class="FooterTitle"><img src="Assets/image/logo.png">株式会社ENGEEK</div>
+    </footer>
+
+    <div class="SiteMap">サイトマップ<br>
+        <a href="index.html" style="color: white">
+            <div class="Box">ホーム</div>
+        </a>
+        <a href="betaTest.html" style="color: white">
+            <div class="Box">βテスト</div>
+        </a>
+        <a href="GenesisRecord/index.html" style="color: white">
+            <div class="Box">ゲームページ</div>
+        </a>
+        <a style="color: white">
+            <div class="Box">社員ブログ</div>
+        </a>
+    </div>
+    <article class="Copy">&copy;2018 ENGEEK All rights reserved.&nbsp;Created by Yuya Sato.</article>
+    <script>
+        $(function() {
+            $("a.Smooth").click(function() {
+                $("html,body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top
+                }, 1000, "swing");
+                return false;
+            })
+        });
+        var startPos;
+        $(function() {
+            $("header").css("top", "-" + 5 + "em");
+            startPos = 0;
+        });
+        $(window).scroll(function() {
+            // windowがスクロールされた時に実行する処理
+            var currentPos = $(this).scrollTop();
+            if (currentPos > startPos) {
+                if ($(window).scrollTop() >= 100) {
+                    $("header").css("top", "-" + 5 + "em");
+                }
+            } else {
+                $("header").css("top", 0 + "px");
+            }
+            startPos = currentPos;
+        });
+    </script>
+</body>
+
+</html>
