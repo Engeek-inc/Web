@@ -499,6 +499,36 @@ table.Table tr.HoverAnimation:hover {
     color: white;
 }
 
+div.Members{
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 90vw;
+    flex-wrap: wrap;
+    display: flex;
+}
+div.Members div.Box{
+    width: 50vh;
+    height: 50vh;
+    justify-content: flex-start;
+    margin-right: 1em;
+    flex-wrap: nowrap;
+    display: inline-flex;
+}
+div.Members div.Box img{
+    border-radius: 10em 10em 10em 10em;
+    height: 30%;
+    width: 30%;
+    margin-right: 1em;
+}
+div.Members div.Box span.Title{
+    padding-left: 1em;
+    display: contents;
+}
+div.Members div.Box span.Content{
+    font-weight: 300;
+    display: contents;
+}
 footer {
     display: block;
     position: relative;
