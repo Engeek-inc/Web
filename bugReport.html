@@ -1,20 +1,22 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8"/>
-<title>バグ一覧・仕様一覧(Genesis Record)</title>
-<!--Fabicon-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8" />
+    <title>バグ一覧・仕様一覧(Genesis Record)</title>
+    <!--Fabicon-->
     <link rel="apple-touch-icon-precomposed" href="Assets/image/logo.png">
     <link rel="shortcut icon" href="Assets/image/logo.png">
-<!--cssの読み込み-->
-<link rel="stylesheet" href="Assets/css/main.css" type="text/css" />
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<!--JS読み込み-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="Assets/js/main.js"></script>
+    <!--cssの読み込み-->
+    <link rel="stylesheet" href="Assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--JS読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Assets/js/main.js"></script>
 </head>
+
 <body>
-      <header><a href="index.html"><img src="Assets/image/engeeklogo_opacity.png"></a>
+    <header><a href="index.html"><img src="Assets/image/engeeklogo_opacity.png"></a>
         <img src="Assets/image/SearchIcon.png" class="Search">
         <input class="SearchInputField" />
         <img src="Assets/image/Remove.png" class="RemoveResult">
@@ -44,6 +46,7 @@
         $(".RemoveResult").click(function() {
             $("input.SearchInputField").val("");
         });
+
     </script>
 
 
@@ -57,44 +60,55 @@
         ここには現在Genesis Recordにおいて確認されているバグを記載しております。<br>βテスターの皆さま、ご協力ありがとうございます。
         <br><br>
         <table class="Table">
-                <tr>
-                    <th class="t_top Underline">バグ内容</th>
-                    <th class="t_top Underline">バージョン</th>
-                    <th class="t_top Underline">状態</th>
-                </tr>
-                <tr class="HoverAnimation">
-                    <td class="Center">コインの回収ができない</td>
-                    <td class="Center">0.1(beta)</td>
-                    <td class="Center">◯</td>
-                </tr>
-                <tr class="HoverAnimation">
-                    <td class="Center">説明文が不十分</td>
-                    <td class="Center">0.1(beta)</td>
-                    <td class="Center">×</td>
-                </tr>
-                <tr class="HoverAnimation">
-                    <td class="Center">ダンジョンにおいて特定のキャラクターのアニメーションがおかしい</td>
-                    <td class="Center">0.1(beta)</td>
-                    <td class="Center">◯</td>
-                </tr>
+            <tr>
+                <th class="t_top Underline">バグ内容</th>
+                <th class="t_top Underline">バージョン</th>
+                <th class="t_top Underline">状態</th>
+            </tr>
+            <tr class="HoverAnimation">
+                <td class="Center">ダンジョンにおけるアイテム使用</td>
+                <td class="Center">0.8(beta)</td>
+                <td class="Center">◯</td>
+            </tr>
+            <tr class="HoverAnimation">
+                <td class="Center">ダンジョンを失敗した場合はシナリオが終了した状態から開始するように</td>
+                <td class="Center">0.8(beta)</td>
+                <td class="Center">◯</td>
+            </tr>
+            <tr class="HoverAnimation">
+                <td class="Center">ダンジョンにおいてBGMの音量が小さくなって消えてしまう問題</td>
+                <td class="Center">0.8(beta)</td>
+                <td class="Center">◯</td>
+            </tr>
+            <tr class="HoverAnimation">
+                <td class="Center">復活処理</td>
+                <td class="Center">0.1(beta)</td>
+                <td class="Center">◯</td>
+            </tr>
         </table>
-    </article><article class="Title">
+    </article>
+    <article class="Title">
         仕様改善
     </article>
     <article class="Content">
         ここにはβテスターの方から頂いたご指摘を載せていきます。<br>βテスターの皆さま、ご協力ありがとうございます。
         <br><br>
         <table class="Table">
-                <tr>
-                    <th class="t_top Underline">仕様改善内容</th>
-                    <th class="t_top Underline">バージョン</th>
-                    <th class="t_top Underline">状態</th>
-                </tr>
-                <tr class="HoverAnimation">
-                    <td class="Center">アイテムを手に入れにくい</td>
-                    <td class="Center">0.1(beta)</td>
-                    <td class="Center">×</td>
-                </tr>
+            <tr>
+                <th class="t_top Underline">仕様改善内容</th>
+                <th class="t_top Underline">バージョン</th>
+                <th class="t_top Underline">状態</th>
+            </tr>
+            <tr class="HoverAnimation">
+                <td class="Center">ダンジョンにおけるスキップボタンのわかりにくさ</td>
+                <td class="Center">0.8(beta)</td>
+                <td class="Center">◯</td>
+            </tr>
+            <tr class="HoverAnimation">
+                <td class="Center">ダンジョンにおいてキャラクターが一回しか動けないことがわかりにくい</td>
+                <td class="Center">0.8(beta)</td>
+                <td class="Center">◯</td>
+            </tr>
         </table>
     </article>
     <br><br><br><br><br>
@@ -117,7 +131,7 @@
         </a>
     </div>
     <article class="Copy">&copy;2018 ENGEEK All rights reserved.&nbsp;Created by Yuya Sato.</article>
-<script>
+    <script>
         $(function() {
             $("a.Smooth").click(function() {
                 $("html,body").animate({
@@ -147,4 +161,5 @@
 
     </script>
 </body>
+
 </html>
