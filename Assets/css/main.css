@@ -32,10 +32,51 @@ a.Line {
 a {
     transition: all .3s;
     text-decoration: none;
+    color: black;
 }
 
 a:hover {
     opacity: .5;
+}
+
+ul {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin-bottom: 5px;
+    background: #dbebf8;
+    vertical-align: middle;
+    color: #505050;
+    border-radius: 15px 0px 0px 15px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+ul li:hover {
+    margin-left: .5em;
+}
+
+.margin1em {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+ul li:before {
+    /*疑似要素*/
+    display: inline-block;
+    vertical-align: middle;
+    /*以下白丸つくる*/
+    content: '';
+    width: 1em;
+    height: 1em;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 8px;
 }
 
 .Center {
@@ -44,6 +85,10 @@ a:hover {
 
 .Bold {
     font-weight: 400;
+}
+
+.Underline {
+    border-bottom: 1px solid black;
 }
 
 header {
@@ -485,68 +530,62 @@ table.Table td {
     padding: 10px;
 }
 
-table.Table tr:hover {
-    border-bottom: 1px solid black;
+table.Table tr.HoverAnimation:hover {
+    background-color: #3F9BDB;
+    color: white;
 }
 
-table.CardTable {
-    float: left;
+div.Members {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 90vw;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+div.Members div.Box {
+    width: 50vh;
+    height: 50vh;
+    justify-content: flex-start;
+    margin-right: 1em;
+    flex-wrap: nowrap;
+    display: inline-flex;
+}
+
+div.Members div.Box img {
+    border-radius: 10em 10em 10em 10em;
+    height: 30%;
+    width: 30%;
+    margin-right: 1em;
+}
+
+div.Members div.Box span.Title {
+    padding-left: 1em;
+    display: contents;
+}
+
+div.Members div.Box span.Content {
+    font-weight: 300;
+    display: contents;
+}
+
+#acMenu dt {
+    display: block;
+    line-height: 50px;
     text-align: center;
+    border: #666 1px solid;
+    cursor: pointer;
+    border-top: black 4px solid;
+    width: 100%;
 }
 
-.cards {
-    position: relative;
-}
-
-.card {
-    margin: 30px auto;
-    max-width: 20em;
-    flex-direction: row-reverse;
-    /*横並び・左から右（デフォルト）*/
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px #ccc;
-    position: relative;
-    float: left;
-}
-
-.card-img {
-    border-radius: 5px 5px 0 0;
-    max-width: 100%;
-    height: auto;
-}
-
-.card-content {
-    padding: 20px;
-}
-
-.card-title {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-}
-
-.card-text {
-    color: #777;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-.card-link {
-    text-align: center;
-    border-top: 1px solid #eee;
-    padding: 20px;
-}
-
-.card-link a {
-    text-decoration: none;
-    color: #0bd;
-    margin: 0 10px;
-}
-
-.card-link a:hover {
-    color: #0090aa;
+#acMenu dd {
+    display: none;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    left: 0px;
 }
 
 footer {
@@ -627,9 +666,11 @@ article.Copy {
     background-color: #142955;
     text-align: center;
     margin: 0px 0px 0px 0px;
-    width: 100vw;
+    width: 90vw;
     color: white;
     font-weight: 200;
     font-family: "Noto Sans", "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     padding-bottom: 2em;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
